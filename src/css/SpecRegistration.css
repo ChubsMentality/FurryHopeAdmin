@@ -1,0 +1,696 @@
+.specReg-body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background-color: #F4F6FA;
+}
+
+.specReg-content {
+    margin-left: 380px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.specReg-header {
+    margin: 0 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.specReg-back-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.specReg-back-icon {
+    height: 35px;
+    width: 35px;
+}
+
+.specReg-back-txt {
+    font-size: 1.48rem;
+    margin-left: 10px;
+}
+
+.specReg-header-right{ 
+    display: flex;
+    align-items: center;
+}
+
+.specReg-currentStatus-pending {
+    background-color: #efab54;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 5px 15px;
+    margin: 0 0 0 10px;
+}
+
+.specReg-currentStatus-rejected {
+    background-color: #ed5e68;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 5px 15px;
+    margin: 0 0 0 10px;
+}
+
+.specReg-currentStatus-accepted {
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 5px 15px;
+    margin: 0 0 0 10px;
+}
+
+.specReg-regInfoContainer {
+    display: flex;
+    margin: 40px 90px;
+}
+
+.specReg-regInfo {
+    padding: 40px 35px;
+    background-color: white;
+    margin-right: 30px;
+    border-radius: 5px;
+    width: 450px
+}
+
+.regInfo-applicantContainer {
+    display: flex;
+    align-items: center;
+    margin: 0 0 40px 0;
+}
+
+.regInfo-applicantImg {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+}
+
+.regInfo-applicantInfo {
+    margin: 0 0 0 15px;
+}
+
+.regInfoLabelBlock {
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.regInfoValueBlock {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.regInfoEmail {
+    margin-top: 10px;
+}
+
+.regInfoDateSubmitted {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.regInfoDateSubmitted span {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-left: 2px;
+}
+
+.regInfoLabel {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.regInfoLabel span {
+    font-size: 1.15rem;
+    font-weight: 300;
+    margin-left: 2px;
+}
+
+.regInfoPetHeader {
+    font-size: 1.2rem;
+    margin: 50px 0 15px 0;
+}
+
+.specReg-regRequirements {
+    padding: 35px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.specReg-reqHeader {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.specReg-requirementsContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 20px 0;
+}
+
+.specReg-reqChecked, .specReg-reqCheckBox {
+    height: 28px;
+    width: 28px;
+    border-radius: 5px;
+}
+
+.specReg-reqCheckBox {
+    cursor: pointer;
+}
+
+.specReg-reqChecked {
+    background-color: #111;
+    display: grid;
+    place-items: center;
+}
+
+.specReg-checkedIcon {
+    height: 17px;
+    width: 17px;
+}
+
+.specReg-reqLabel {
+    margin-left: 5px;
+}
+
+.specReg-saveBtn {
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 48px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 40px 0 0 0;
+    cursor: pointer;
+}
+
+.specReg-regActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    margin: 20px 0 0 0;
+    padding: 30px;
+}
+
+.regInfoBtn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.regInfoAccept {
+    margin-right: 10px;
+    background-color: green;
+}
+
+.regInfoDecline {
+    margin-left: 10px;
+    background-color: #ed5e68;
+}
+
+/* 1600 x 1200 */
+@media screen and (max-width: 1919px) {
+    .specReg-content {
+        margin-left: 310px;
+        padding-top: 50px;
+    }
+
+    .specReg-header {
+        margin: 0 90px;
+    }
+
+    .specReg-back-icon {
+        height: 33px;
+        width: 33px;
+    }
+
+    .specReg-back-txt {
+        font-size: 1.2rem;
+    }
+
+    .specReg-regInfoContainer {
+        margin: 30px 90px 0 90px;
+    }
+
+    .specReg-regInfo {
+        width: 380px;
+        padding: 30px 35px;
+        margin-right: 30px;
+    }
+
+    .regInfo-applicantContainer {
+        margin: 0 0 30px 0;
+    }
+
+    .regInfo-applicantImg {
+        height: 70px;
+        width: 70px;
+    }
+
+    .regInfoLabelBlock {
+        font-size: .8rem;
+    }
+
+    .regInfoValueBlock {
+        font-size: .95rem;
+    }
+
+    .regInfoEmail {
+        margin-top: 8px;
+    }
+
+    .regInfoDateSubmitted {
+        font-size: .95rem;
+    }
+
+    .regInfoDateSubmitted span {
+        font-size: .9rem;
+    }
+
+    .regInfoLabel {
+        font-size: .95rem;
+    }
+
+    .regInfoLabel span {
+        font-size: .9rem;
+    }
+
+    .regInfoPetHeader {
+        font-size: 1rem;
+        margin: 35px 0 10px 0;
+    }
+
+    .specReg-regRequirements {
+        padding: 30px;
+    }
+
+    .specReg-reqHeader {
+        font-size: 1.1rem;
+    }
+
+    .specReq-requirementsContainer {
+        margin: 0 0 15px 0;
+    }
+
+    .specReg-reqChecked, .specReg-reqCheckBox {
+        height: 24px;
+        width: 24px;
+    }
+
+    .specReg-checkedIcon {
+        height: 15px;
+        width: 15px;
+    }
+
+    .specReg-reqLabel {
+        margin-left: 8px;
+        font-size: .9rem;
+    }
+
+    .specReg-saveBtn {
+        font-size: 1.1rem;
+        height: 45px;
+    }
+
+    .specReg-regActions {
+        padding: 25px;
+        margin: 20px 0 0 0;
+    }
+     
+    .regInfoBtn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+/* 1440 x 900*/
+@media screen and (max-width: 1440px) {
+    .specReg-content {
+        margin-left: 305px;
+    }
+}
+
+/* 1360 x 768 */
+@media screen and (max-width: 1366px) {
+    .specReg-content {
+        margin-left: 275px;
+        padding-top: 50px;
+    }
+
+    .specReg-header {
+        margin: 0 70px;
+    }
+
+    .specReg-back-icon {
+        height: 25px;
+        width: 25px;
+    }
+
+    .specReg-back-txt {
+        font-size: 1rem;
+    }
+
+    .specReg-currentStatus-pending, .specReg-currentStatus-rejected, .specReg-currentStatus-accepted {
+        padding: 5px 12px;
+        margin: 0 0 0 10px;
+        font-size: .75rem;
+    }
+
+    .specReg-regInfoContainer {
+        margin: 30px 70px 0 70px;
+    }
+
+    .specReg-regInfo {
+        width: 360px;
+        padding: 27px 30px;
+    }
+
+    .regInfo-applicantContainer {
+        margin: 0 0 25px 0;
+    }
+
+    .regInfo-applicantImg {
+        height: 60px;
+        width: 60px;
+    }
+
+    .regInfoLabelBlock {
+        font-size: .65rem;
+    }
+
+    .regInfoValueBlock {
+        font-size: .8rem;
+    }
+
+    .regInfoEmail {
+        margin-top: 7px;
+    }
+
+    .regInfoDateSubmitted {
+        font-size: .8rem;
+    }
+
+    .regInfoDateSubmitted span {
+        font-size: .75rem;
+    }
+
+    .regInfoLabel {
+        font-size: .8rem;
+    }
+
+    .regInfoLabel span {
+        font-size: .75rem;
+    }
+
+    .regInfoPetHeader {
+        font-size: .9rem;
+        margin: 30px 0 10px 0;
+    }
+
+    .specReg-regRequirements {
+        padding: 30px;
+    }
+
+    .specReg-reqHeader {
+        font-size: 1rem;
+    }
+
+    .specReq-requirementsContainer {
+        margin: 0 0 15px 0;
+    }
+
+    .specReg-reqChecked,
+    .specReg-reqCheckBox {
+        height: 22px;
+        width: 22px;
+    }
+
+    .specReg-checkedIcon {
+        height: 12px;
+        width: 12px;
+    }
+
+    .specReg-reqLabel {
+        margin-left: 8px;
+        font-size: .8rem;
+    }
+
+    .specReg-saveBtn {
+        font-size: 1rem;
+        height: 40px;
+    }
+
+    .specReg-regActions {
+        padding: 25px;
+        margin: 20px 0 0 0;
+    }
+
+    .regInfoBtn {
+        font-size: .85rem;
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (width: 1366px) and (height: 625px) {
+    .specReg-content {
+        padding-top: 40px;
+    }
+
+    .specReg-back-icon {
+        height: 23px;
+        width: 23px;
+    }
+
+    .specReg-back-txt {
+        font-size: .9rem;
+    }
+
+    .specReg-currentStatus-pending,
+    .specReg-currentStatus-rejected,
+    .specReg-currentStatus-accepted {
+        padding: 4px 12px;
+        margin: 0 0 0 10px;
+        font-size: .7rem;
+    }
+
+    .specReg-regInfoContainer {
+        margin: 20px 70px 0 70px;
+    }
+}
+
+/* 1280 x 1024 */
+@media screen and (max-width: 1280px) {
+    .specReg-content {
+        margin-left: 260px;
+    }
+
+    .specReg-header {
+        margin: 0 65px;
+    }
+
+    .specReg-regInfoContainer {
+        margin: 40px 65px 0 65px;
+    }
+
+    .specReg-regInfo {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .specReg-content {
+        margin-left: 240px;
+        padding-top: 50px;
+    }
+
+    .specReg-header {
+        margin: 0 55px;
+    }
+
+    .specReg-back-icon {
+        height: 25px;
+        width: 25px;
+    }
+
+    .specReg-back-txt {
+        font-size: 1rem;
+    }
+
+    .specReg-currentStatus-pending,
+    .specReg-currentStatus-rejected,
+    .specReg-currentStatus-accepted {
+        padding: 5px 12px;
+        margin: 0 0 0 10px;
+        font-size: .75rem;
+    }
+
+    .specReg-regInfoContainer {
+        margin: 40px 55px 0 55px;
+    }
+
+    .specReg-regInfo {
+        width: 270px;
+        padding: 27px 30px;
+    }
+
+    .regInfo-applicantContainer {
+        margin: 0 0 25px 0;
+    }
+
+    .regInfo-applicantImg {
+        height: 50px;
+        width: 50px;
+    }
+
+    .regInfoLabelBlock {
+        font-size: .6rem;
+    }
+
+    .regInfoValueBlock {
+        font-size: .7rem;
+    }
+
+    .regInfoEmail {
+        margin-top: 3px;
+    }
+
+    .regInfoDateSubmitted {
+        font-size: .7rem;
+    }
+
+    .regInfoDateSubmitted span {
+        font-size: .7rem;
+    }
+
+    .regInfoLabel {
+        font-size: .7rem;
+    }
+
+    .regInfoLabel span {
+        font-size: .7rem;
+    }
+
+    .regInfoPetHeader {
+        font-size: .75rem;
+        margin: 10px 0 10px 0;
+    }
+
+    .specReg-regRequirements {
+        padding: 30px;
+    }
+
+    .specReg-reqHeader {
+        font-size: 1rem;
+    }
+
+    .specReq-requirementsContainer {
+        margin: 0 0 15px 0;
+    }
+
+    .specReg-reqChecked,
+    .specReg-reqCheckBox {
+        height: 20px;
+        width: 20px;
+    }
+
+    .specReg-checkedIcon {
+        height: 10px;
+        width: 10px;
+    }
+
+    .specReg-reqLabel {
+        margin-left: 8px;
+        font-size: .7rem;
+    }
+
+    .specReg-saveBtn {
+        font-size: .95rem;
+        height: 38px;
+    }
+
+    .specReg-regActions {
+        padding: 25px;
+        margin: 20px 0 0 0;
+    }
+
+    .regInfoBtn {
+        font-size: .85rem;
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .specReg-content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .specReg-body {
+        height: 100%;
+        width: 100vw;
+    }
+
+    .specReg-header {
+        margin: 0 25px;
+    }
+
+    .specReg-back-icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    .specReg-back-txt {
+        font-size: .85rem;
+    }
+
+    .specReg-currentStatus-pending,
+    .specReg-currentStatus-rejected,
+    .specReg-currentStatus-accepted {
+        padding: 4px 8px;
+        margin: 0 0 0 10px;
+        font-size: .6rem;
+    }
+
+    .specReg-regInfoContainer {
+        margin: 20px 25px 0 25px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .specReg-regInfo {
+        margin: 20px 0 0 0;
+    }
+
+    .specReg-regRequirements {
+        margin: 20px 0;
+    }
+}

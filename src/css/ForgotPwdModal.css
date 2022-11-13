@@ -1,0 +1,209 @@
+.forgotPwdModal {
+    height: 560px;
+    width: 620px;
+    background-color: white;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+}
+
+.forgotPwdModal-close {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.forgotPwdContainer {
+    padding-top: 40px;
+}
+
+.forgotPwdHeader, .forgotPwdSubHeader {
+    text-align: center;
+}
+
+.forgotPwdHeader {
+    margin: 0 0 5px 0;
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.forgotPwdSubHeader {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.forgotPwdLabel, .forgotPwdInput {
+    display: block;
+}
+
+.forgotPwdLabel {
+    margin: 50px 0 0 98px;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.forgotPwdInput {
+    margin: 3px auto 0 auto;
+    width: 400px;
+    height: 42px;
+    padding: 0 10px;
+    font-size: .9rem;
+    border-radius: 5px;
+}
+
+.forgotPwdSubmitBtn {
+    margin: 80px auto 0 auto;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: 420px;
+    height: 55px;
+    background-color: #7d5aef;
+    border: 1px solid #6036ea;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.forgotPwdSubmitBtn:hover {
+    background-color: #8b6bf6;
+}
+
+/* 1600 x 900 */
+@media screen and (max-width: 1919px) {
+}
+
+/* 1440 x 900 */
+@media screen and (max-width: 1440px) {
+    .forgotPwdModal {
+        height: 470px;
+        width: 550px;
+    }
+
+    .forgotPwdModal-close {
+        height: 30px;
+        width: 30px;
+    }
+
+    .forgotPwdHeader {
+        margin-top: 35px;
+        font-size: 1.9rem;
+    }
+
+    .forgotPwdSubHeader {
+        font-size: 1.3rem;
+    }
+
+    .forgotPwdLabel {
+        font-size: 1.15rem;
+        margin: 40px 0 0 63px;
+    }
+
+    .forgotPwdInput {
+        margin: 4px auto 0 auto;
+        height: 40px;
+        font-size: .85rem;
+    }
+
+    .forgotPwdSubmitBtn {
+        margin: 80px auto 0 auto;
+        font-size: 1.1rem;
+        height: 50px;
+
+    }
+}
+
+/* 1360 x 900 */
+@media screen and (max-width: 1366px) {
+}
+
+@media screen and (width: 1366px) and (height: 625px) {
+    .forgotPwdModal {
+        height: 360px
+    }
+
+    .forgotPwdModal-close {
+        height: 24px;
+        width: 24px;
+    }
+
+    .forgotPwdHeader {
+        margin-top: 10px;
+        font-size: 1.7rem;
+    }
+
+    .forgotPwdSubHeader {
+        font-size: 1.1rem;
+    }
+
+    .forgotPwdLabel {
+        font-size: .9rem;
+        margin: 40px 0 0 63px;
+    }
+
+    .forgotPwdInput {
+        height: 30px;
+        font-size: .75rem;
+    }
+
+    .forgotPwdSubmitBtn {
+        margin: 50px auto 0 auto;
+        height: 45px;
+        font-size: .95rem;
+        border: none;
+        outline: none;
+    }
+}
+
+/* 1280 x 1024 */
+@media screen and (max-width: 1280px) {
+    .forgotPwdModal {
+        height: 400px;
+        width: 480px;
+    }
+
+    .forgotPwdModal-close {
+        height: 26px;
+        width: 26px;
+    }
+
+    .forgotPwdHeader {
+        margin-top: 25px;
+        font-size: 1.5rem;
+    }
+
+    .forgotPwdSubHeader {
+        font-size: 1.1rem;
+    }
+
+    .forgotPwdLabel {
+        font-size: .9rem;
+        margin: 40px 0 0 53px;
+    }
+
+    .forgotPwdInput {
+        font-size: .75rem;
+        height: 30px;
+        width: 350px;
+    }
+
+    .forgotPwdSubmitBtn {
+        margin: 48px auto 0 auto;
+        font-size: 1rem;
+        height: 45px;
+        width: 373px;
+    }
+}
+
+/* 1024 x 768 */
+@media screen and (max-width: 1024px) {
+
+}

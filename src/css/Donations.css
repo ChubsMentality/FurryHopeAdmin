@@ -1,0 +1,952 @@
+.donations-body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #F4F6FA;
+    font-family: 'Poppins', sans-serif;
+}
+
+.donations-content {
+    margin-left: 390px;
+    padding: 70px 0 0 0;
+}
+
+.donations-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 90px;
+}
+
+.donations-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: fit-content;
+    border-bottom: 1px solid #b0b0b0;
+} 
+
+.toggleRegistrationsBtnContainer {
+    margin: 20px 0 0 90px;
+}
+
+.toggle-donation-btn {
+    font-size: 1.2rem;
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.donation-active, .donation-inactive {
+    margin-right: 10px;
+}
+
+.donation-active, .inventory-active {
+    background-color: #111;
+    color: white;
+}
+
+.donation-inactive, .inventory-inactive {
+    background-color: transparent;
+    border: 1px solid #111;
+    color: #111;
+}   
+
+.donations-container {
+    background-color: white;
+    border-radius: 10px;
+    height: 780px;
+    margin: 30px 90px 0 90px;
+    position: relative;
+}
+
+.specDonation-container:nth-of-type(even), .specInventory-container:nth-of-type(even) {
+    background: #f5f5f5;
+}
+
+.donations-labels-container {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
+}
+
+.donations-label {
+    width: 33%;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.specDonation-container {
+    height: 90px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.specDonation-column {
+    width: 20%;
+}
+
+.specDonation-donator {
+    display: flex;
+    align-items: center;
+}
+
+.specDonation-image {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.specDonation-actions {
+    display: flex;
+    align-items: center;
+}
+
+.specDonation-view {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    background-color: #e8e8e8;
+    width: fit-content;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    margin: 0 15px 0 0;
+}
+
+.specDonation-delete {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.specDonation-delete-icon {
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.inventories-container {
+    background-color: white;
+    border-radius: 10px;
+    height: 780px;
+    margin: 30px 90px 0 90px;
+    position: relative;
+}
+
+.inventories-labels-container {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
+}
+
+.inventories-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 25%;
+}
+
+.specInventory-container {
+    height: 90px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.specInventory-column {
+    width: 25%;
+}
+
+.specInventory-donator {
+    display: flex;
+    align-items: center;
+}
+
+.specInventory-donatorImg {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.specInventory-donator-txt {
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.specInventory-items {
+    margin: 0 0 5px 0;
+}
+
+.specInventory-itemQuantity {
+    margin-left: 5px;
+}
+
+.specInventory-delete {
+    background-color: transparent;
+    border: none;
+}
+
+.specInventory-delete-icon {
+    height: 45px;
+    width: 45px;
+}
+
+/* Modal */
+.donations-modal {
+    width: 950px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 100px 0 100px 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+}
+
+.donations-close-modal {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.donations-modal-columns {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.donation-modal-left-column, .donation-modal-right-column {
+}
+
+.donation-modal-left-column {
+}
+
+.donation-modal-label {
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.donation-modal-value {
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.date-of-donation-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 60px 0 20px 0;
+}
+
+.donations-modal-right-column {
+    overflow: auto;
+    height: 300px;
+}
+
+.donations-modal-table {
+    border-collapse: collapse;
+}
+
+.donations-modal-tableHeading {
+    background-color: #111;
+    border-right: 1px solid #b0b0b0;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 5px 35px;
+    position: sticky;
+    top: 0;
+}
+
+.donations-modal-body-row {
+    border-bottom: .5px solid #b0b0b0;
+    height: 20px;
+}
+
+.donations-modal-itemName, .donations-modal-quantity {
+    font-size: 1.3rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.donations-received-btn {
+    display: block;
+    margin: 80px auto 0 auto;
+    padding: 15px 25px;
+    font-size: 1.7rem;
+    outline: none;
+    cursor: pointer;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+.disabled-received-btn {
+    display: block;
+    margin: 80px auto 0 auto;
+    padding: 15px;
+    font-size: 1.7rem;
+}
+
+
+/* 1600 x 1200 */
+@media screen and (max-width: 1919px) {
+    .donations-content {
+        margin-left: 310px;
+        padding: 55px 0 0 0;
+    }
+
+    .donations-header-container {
+        margin: 0 90px;
+    }
+
+    .donations-header {
+        font-size: 2rem;
+    }
+
+    .toggleRegistrationsBtnContainer {
+        margin: 15px 0 0 90px;
+    }
+
+    .toggle-donation-btn {
+        font-size: .93rem;
+        padding: 8.5px;
+    }
+
+    .donation-active, .donation-inactive {
+        margin-right: 10px;
+    }
+
+    .donations-container, .inventories-container {
+        height: 640px;
+    }
+
+    .donations-labels-container, 
+    .inventories-labels-container {
+        padding: 20px 40px;
+    }
+
+    .donations-label, .inventories-label {
+        font-size: .96rem;
+    }
+
+    .specDonation-container, .specInventory-container {
+        height: 70px;
+    }
+
+    .specDonation-image, .specInventory-donatorImg {
+        height: 46px;
+        width: 46px;
+    }
+
+    .specInventory-donator-txt,
+    .specInventory-date-txt,
+    .specInventory-items,
+    .specInventory-itemQuantity {
+        font-size: .8rem;
+    }
+
+    .specInventory-delete-icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .specDonation-donator-txt,
+    .specDonation-email-txt,
+    .specDonation-contactNo-txt,
+    .specDonation-received-txt {
+        font-size: .8rem;
+    }
+
+
+    .specDonation-view {
+        font-size: .9rem;
+        padding: 9px 23px;
+    }
+
+    .specDonation-delete-icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .donations-modal {
+        width: 840px;
+        padding: 65px 0;
+    }
+
+    .donations-close-modal {
+        height: 35px;
+        width: 35px;
+    }
+
+    .donation-modal-label {
+        font-size: 1.15rem;
+    }
+    
+    .donation-modal-value {
+        font-size: 1.05rem;
+    }
+
+    .date-of-donation-header {
+        font-size: 1.2rem;
+        margin: 60px 0 20px 0;
+    }
+
+    .donations-modal-tableHeading {
+        font-size: 1.1rem;
+        padding: 5px 35px;
+    }
+
+    .donations-modal-body-row {
+        height: 15px;
+    }
+
+    .donations-modal-itemName, .donations-modal-quantity {
+        font-size: 1.1rem;
+        padding: 10px 0;
+    }
+
+    .donations-received-btn {
+        margin: 80px auto 0 auto;
+        padding: 15px 25px;
+        font-size: 1.5rem;
+    }
+
+    .disabled-received-btn {
+        font-size: 1.5rem;
+        padding: 15px;
+        margin: 80px auto 0 auto;
+    }
+}
+
+/* 1440 x 900 */
+@media screen and (max-width: 1440px) {
+    .donations-content {
+        margin-left: 305px;
+    }
+
+    .donations-header-container {
+        margin: 0 70px;
+    }
+
+    .donations-header {
+        font-size: 1.8rem;
+    }
+
+    .toggleRegistrationsBtnContainer {
+        margin: 15px 0 0 70px;
+    }
+
+    .toggle-donation-btn {
+        font-size: .85rem;
+        padding: 8.5px;
+    }
+
+    .donation-active, .donation-inactive {
+        margin-right: 10px;
+    }
+
+    .donations-container, .inventories-container {
+        margin: 30px 70px 0 70px;
+        height: 590px;
+    }
+
+    .donations-labels-container, .inventories-labels-container {
+        padding: 20px 30px;
+    }
+
+    .donations-label, .inventories-label {
+        font-size: .9rem;
+    }
+
+    .specDonation-container, .specInventory-container {
+        padding: 15px 30px;
+        height: 60px;
+    }
+
+    .specDonation-image, .specInventory-donatorImg {
+        height: 42px;
+        width: 42px;
+    }
+
+    .specInventory-donator-txt,
+    .specInventory-date-txt,
+    .specInventory-items,
+    .specInventory-itemQuantity {
+        font-size: .7rem;
+    }
+
+    .specInventory-delete-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    .specDonation-donator-txt,
+    .specDonation-email-txt,
+    .specDonation-contactNo-txt,
+    .specDonation-received-txt {
+        font-size: .7rem;
+    }
+
+    .specDonation-view {
+        font-size: .8rem;
+        padding: 7px 20px;
+    }
+
+    .specDonation-delete-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    .donations-modal {
+        width: 790px;
+        padding: 50px 0;
+    }
+
+    .donations-close-modal {
+        height: 30px;
+        width: 30px;
+    }
+
+    .donation-modal-label {
+        font-size: 1rem;
+    }
+
+    .donation-modal-value {
+        font-size: .95rem;
+    }
+
+    .date-of-donation-header {
+        font-size: 1.05rem;
+    }
+
+    .donations-modal-tableHeading {
+        padding: 5px 35px;
+        font-size: .95rem;
+    }
+
+    .donations-modal-body-row {
+        height: 10px;
+    }
+
+    .donations-modal-itemName, .donations-modal-quantity {
+        font-size: .9rem;
+    }
+
+    .donations-received-btn {
+        font-size: 1.25rem;
+        padding: 15px;
+        margin: 80px auto 0 auto;
+    }
+}
+
+/* 1360 x 768 */
+@media screen and (max-width: 1366px) {
+    .donations-content {
+        margin-left: 275px;
+    }
+
+    .donations-header-container {
+        margin: 0 70px;
+    }
+
+    .donations-header {
+        font-size: 1.65rem;
+    }
+
+    .toggleRegistrationsBtnContainer {
+        margin: 10px 0 0 70px;
+    }
+
+    .toggle-donation-btn {
+        font-size: .8rem;
+        padding: 8.5px;
+    }
+
+    .donation-active,
+    .donation-inactive {
+        margin-right: 10px;
+    }
+
+    .donations-container, .inventories-container {
+        margin: 20px 70px 0 70px;
+        height: 560px;
+    }
+
+    .donations-labels-container, .inventories-labels-container {
+        padding: 18px 30px;
+    }
+
+    .donations-label, .inventories-label {
+        font-size: .83rem;
+    }
+
+    .donations-label-contactNo {
+        margin-left: 5px;
+    }
+
+    .specDonation-container, .specInventory-container {
+        padding: 15px 30px;
+        height: 55px;
+    }
+
+    .specDonation-image, .specInventory-donatorImg {
+        height: 38px;
+        width: 38px;
+    }
+
+    .specInventory-donator-txt,
+    .specInventory-date-txt,
+    .specInventory-items,
+    .specInventory-itemQuantity {
+        font-size: .68rem;
+    }
+
+    .specInventory-delete-icon {
+        height: 27px;
+        width: 27px;
+    }
+
+    .specDonation-donator-txt,
+    .specDonation-email-txt,
+    .specDonation-contactNo-txt,
+    .specDonation-received-txt {
+        font-size: .68rem;
+    }
+
+    .specDonation-contactNo-txt {
+        margin-left: 5px;
+    }
+
+    .specDonation-view {
+        font-size: .78rem;
+        padding: 7px 22px;
+    }
+
+    .specDonation-delete-icon {
+        height: 27px;
+        width: 27px;
+        margin-left: 0;
+    }
+
+    .donations-modal {
+        width: 740px;
+        padding: 43px 0;
+    }
+
+    .donations-close-modal {
+        height: 27px;
+        width: 27px;
+    }
+
+    .donation-modal-label {
+        font-size: .93rem;
+    }
+
+    .donation-modal-value {
+        font-size: .88rem;
+    }
+
+    .donations-modal-tableHeading {
+        padding: 5px 35px;
+        font-size: .85rem;
+    }
+
+    .donations-modal-body-row {
+        height: 10px;
+    }
+
+    .donations-modal-itemName, .donations-modal-quantity {
+        font-size: .8rem;
+    }
+
+    .donations-received-btn {
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (width: 1366px) and (height: 625px) {
+    .donations-content {
+        padding-top: 40px;
+    }
+
+    .donations-header {
+        font-size: 1.3rem;
+    }
+
+    .toggle-donation-btn {
+        font-size: .7rem;
+        padding: 7px 8px;
+    }
+
+    .donations-container, .inventories-container {
+        margin: 18px 70px 0 70px;
+        height: 465px;
+    }
+
+    .donations-labels-container, .inventories-labels-container {
+        padding: 15px 30px;
+    }
+
+    .donations-label, .inventories-label {
+        font-size: .73rem;
+    }
+
+    .specDonation-container, .specInventory-container {
+        height: 40px;
+    }
+
+    .donations-modal {
+        width: 680px;
+        padding: 50px 0 0 0;
+    }
+
+    .donation-modal-label {
+        font-size: .87rem;
+    }
+
+    .donation-modal-value {
+        font-size: .82rem;
+    }
+
+    .donations-modal-tableHeading {
+        padding: 5px 35px;
+        font-size: .8rem;
+    }
+
+    .donations-modal-itemName, .donations-modal-quantity {
+        font-size: .75rem;
+    }
+
+    .donations-received-btn {
+        font-size: .9rem;
+        margin: 20px auto;
+    }
+}
+
+/* 1280 x 1024 */
+@media screen and (max-width: 1280px) {
+    .donations-content {
+        margin-left: 260px;
+    }
+
+    .donations-label, .inventories-label { font-size: .8rem; }
+
+    .donations-label-contactNo {
+        margin-left: 10px;
+    }
+
+    .specInventory-donator-txt,
+    .specInventory-date-txt,
+    .specInventory-items,
+    .specInventory-itemQuantity {
+        font-size: .675rem;
+    }
+
+    .specDonation-donator-txt,
+    .specDonation-email-txt,
+    .specDonation-contactNo-txt,
+    .specDonation-received-txt {
+        font-size: .675rem;
+    }
+
+    .specDonation-contactNo-txt {
+        margin-left: 10px;
+    }
+}
+
+/* 1024 x 768 */
+@media screen and (max-width: 1024px) {
+    .donations-content {
+        margin-left: 240px;
+    }
+
+    .donations-header-container {
+        margin: 0 50px;
+    }
+
+    .donations-header {
+        font-size: 1.5rem;
+    }
+
+    .toggleRegistrationsBtnContainer {
+        margin: 10px 0 0 50px;
+    }
+
+    .toggle-donation-btn {
+        font-size: .78rem;
+        padding: 7.5px;
+    }
+
+    .donation-active,
+    .donation-inactive {
+        margin-right: 10px;
+    }
+
+    .donations-container, .inventories-container {
+        margin: 25px 50px 0 50px;
+        height: 480px;
+    }
+
+    .donations-labels-container, .inventories-labels-container {
+        padding: 15px 30px;
+    }
+
+    .donations-label, .inventories-label {
+        font-size: .75rem;
+    }
+
+    .specDonation-container, .specInventory-container {
+        height: 45px;
+        padding: 15px 30px;
+    }
+
+    .specDonation-image, .specInventory-donatorImg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .specInventory-donator-txt,
+    .specInventory-date-txt,
+    .specInventory-items,
+    .specInventory-itemQuantity {
+        font-size: .53rem;
+    }
+
+    .specInventory-delete-icon {
+        height: 23px;
+        width: 23px;
+    }
+
+    .specDonation-donator-txt,
+    .specDonation-email-txt,
+    .specDonation-contactNo-txt,
+    .specDonation-received-txt {
+        font-size: .53rem;
+    }
+
+    .specDonation-view {
+        font-size: .65rem;
+    }
+
+    .specDonation-delete-icon {
+        height: 23px;
+        width: 23px;
+    }
+
+    .donations-modal {
+        width: 700px;
+        padding: 40px 0;
+    }
+
+    .donations-close-modal {
+        height: 25px;
+        width: 25px;
+    }
+
+    .donation-modal-label {
+        font-size: .85rem;
+    }
+
+    .donation-modal-value {
+        font-size: .8rem;
+    }
+
+    .date-of-donation-header {
+        font-size: .9rem;
+    }
+
+    .donations-modal-tableHeading {
+        font-size: .8rem;
+        padding: 7px 35px;
+    }
+
+    .donations-modal-body-row {
+        height: 10px;
+    }
+
+    .donations-modal-itemName, .donations-modal-quantity {
+        font-size: .7rem;
+    }
+
+    .donations-received-btn {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .donations-content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .donations-header-container {
+        margin: 0 25px;
+    }
+
+    .donations-header {
+        font-size: 1.05rem;
+    }
+
+    .toggleRegistrationsBtnContainer {
+        margin: 10px 0 0 25px;
+    }
+
+    .toggle-donation-btn {
+        font-size: .7rem;
+        padding: 7px;
+    }
+
+    .donations-container, .inventories-container {
+        margin: 25px 25px 0 25px;
+        height: 520px;
+    }
+
+    .donations-labels-container, .inventories-labels-container {
+        padding: 10px 15px 10px 15px;;
+    }
+
+    .donations-label, .inventories-label {
+        font-size: .75rem;
+    }
+
+    .specDonation-container, .specInventory-container {
+        height: 35px;
+        padding: 20px 15px;
+    }
+
+    .specDonation-image, .specInventory-donatorImg{
+        height: 22px;
+        width: 22px;
+    }
+
+    .specInventory-donator-txt,
+    .specInventory-date-txt,
+    .specInventory-items,
+    .specInventory-itemQuantity {
+        font-size: .4rem;
+    }
+
+    .specDonation-view {
+        font-size: .55rem;
+        padding: 4px 12px;
+    }
+}

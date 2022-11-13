@@ -1,0 +1,1807 @@
+.specAdoption-body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #F4F6FA;
+  font-family: "Poppins", sans-serif;
+}
+
+.specAdoption-content {
+  margin-left: 390px;
+  padding-top: 70px;
+}
+
+.specAdoption-nav-container {
+  margin: 0 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specAdoption-back-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer
+}
+
+.specAdoption-back-icon {
+  height: 35px;
+  width: 35px;
+}
+
+.specAdoption-back-txt {
+  font-size: 1.4rem;
+  margin: 0 0 0 10px;
+}
+
+.specAdoption-nav-statusContainer {
+  display: flex;
+  align-items: center;
+}
+
+.specAdoption-statusLabel {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.specAdoption-currentStatus-pending {
+  background-color: #efab54;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  width: fit-content;
+  padding: 5px 15px;
+  margin: 0 0 0 10px;
+}
+
+.specAdoption-currentStatus-rejected {
+  background-color: rgb(244, 33, 33);
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  width: fit-content;
+  padding: 5px 15px;
+  margin: 0 0 0 10px;
+}
+
+.specAdoption-currentStatus-accepted {
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  width: fit-content;
+  padding: 5px 15px;
+  margin: 0 0 0 10px;
+}
+
+.specAdoption-details {
+  margin: 50px 90px 0 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specAdoption-info-container:hover {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, .05);
+}
+
+.specAdoption-applicantInfo {
+  background-color: white;
+  border-radius: 5px;
+  height: 380px;
+  width: 500px;
+  padding: 35px 30px 0 30px;
+}
+
+.specAdoption-info-header {
+  font-weight: 600;
+  margin: 0 0 25px 0;
+  position: relative;
+}
+
+.specAdoption-info-header::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background-color: #111;
+  height: 2px;
+  width: 70px;
+  border-radius: 25px;
+}
+
+.specAdoption-applicant-label, .specAdoption-animal-label {
+  display: flex;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+}
+
+.specAdoption-applicant-value, .specAdoption-animal-value {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+.specAdoption-applicant-addressLbl {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.specAdoption-applicant-address {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.specAdoption-applicant-validIdBtn {
+  font-size: 1rem;
+  padding: 8px;
+  margin: 50px 0 0 0;
+  cursor: pointer;
+}
+
+.specAdoption-animalInfo {
+  height: 300px;
+  width: 480px;
+  background-color: white;
+  padding: 35px 30px 0 30px;
+  border-radius: 5px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.specAdoption-animalImg {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  height: 180px;
+  width: 180px;
+}
+
+.specAdoption-setInterviewSched-container {
+  height: 300px;
+  width: 480px;
+  background-color: white;
+  margin-top: 25px;
+}
+
+.specAdoption-sched-header {
+  font-weight: 600;
+  margin: 30px 30px 25px 30px;
+  position: relative;
+}
+
+.specAdoption-sched-header::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background-color: #111;
+  height: 2px;
+  width: 70px;
+  border-radius: 25px;
+}
+
+.specAdoption-sched-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 30px 10px 30px;
+}
+
+.specAdoption-sched-label span {
+  font-weight: 300;
+  margin: 0 0 0 5px;
+}
+
+.hasBeenInterviewedContainer {
+  display: flex;
+  align-items: center;
+  margin: 40px 30px 0 30px;
+}
+
+.hasBeenInterviewedCheckBox {
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hasBeenInterviewedChecked {
+  height: 30px;
+  width: 30px;
+  background-color: #1010104D;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+}
+
+.hasBeenInterviewedCheckedIcon {
+  height: 18px;
+  width: 18px;
+}
+
+.hasBeenInterviewedTxt {
+  color: black;
+  margin-left: 8px;
+  font-size: 1.1rem;
+}
+
+.specAdoption-setInterviewSched-header {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 70px 50px 0 50px;
+  text-align: center;
+}
+
+.specAdoption-setInterviewSched-btn {
+  font-size: 1.1rem;
+  padding: 8px;
+  display: block;
+  margin: 30px auto 0 auto;
+  cursor: pointer;
+}
+
+.specAdoption-adoptionActions-container {
+  height: 300px;
+  width: 420px;
+  background-color: white;
+  margin: 25px 0 0 20px;
+}
+
+.specAdoption-adoptBtns-header {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 50px;
+  margin: 60px 20px 0 20px;
+}
+
+.specAdoption-adoptBtnsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
+
+.specAdoption-acceptAdoptionBtn, .specAdoption-rejectAdoptionBtn {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 10px 18px;
+}
+
+.specAdoption-acceptAdoptionBtn {
+  color: white;
+  background-color: #10aa3f;
+  border: 1px solid #0d8330;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: .15s ease-in;
+}
+
+.specAdoption-acceptAdoptionBtn:hover {
+  background-color: #2dbd58;
+}
+
+.specAdoption-rejectAdoptionBtn {
+  color: white;
+  background-color: #ed5e68;
+  border: 1px solid #c42f39;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: .15s ease-in;
+}
+
+.specAdoption-rejectAdoptionBtn:hover {
+  background-color: #fc717a;
+}
+
+.specAdoption-disabledBtn {
+  font-size: 1.25rem;
+  padding: 8px 15px;
+  margin: 0 5px;
+}
+
+/* Modal Rulesets */
+
+.specAdoption-validIdModal {
+  z-index: 30;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 800px;
+  width: 500px;
+  background-color: white;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+}
+
+.specAdoption-validId-closeIcon {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.specAdoption-validId-preview {
+  height: 600px;
+  width: 400px;
+}
+
+.specAdoption-setSchedModal {
+  height: 540px;
+  width: 650px;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 30;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.specAdoption-setSchedModal-closeIcon {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.set-sched-label {
+  font-size: 1.3rem;
+  margin: 30px 0 5px 40px;
+}
+
+.set-sched-label:first-of-type {
+  margin-top: 60px;
+}
+
+.set-sched-input {
+  margin: 0 40px;
+  font-size: 1.1rem;
+  width: 500px;
+  padding: 14px;
+  background-color: #f3f5f9;
+  border: 1px solid #f1f3f7;
+  border-radius: 5px;
+  outline: none;
+}
+
+.set-sched-input:focus {
+  background-color: white;
+  border: 1px solid #111;
+}
+
+.set-sched-time {
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.set-sched-hour {
+  margin-left: 40px;
+}
+
+.set-sched-label, .set-sched-input {
+  display: block;
+}
+
+.set-sched-btn {
+  display: block;
+  position: relative;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: white;
+  margin: 70px auto 0 auto;
+  padding-left: 20px;
+  height: 60px;
+  width: 160px;
+  background-color: #7d5aef;
+  border: 1px solid #6036ea;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .15s ease-in;
+}
+
+.set-sched-btn:hover {
+  background-color: #8b68fc;
+}
+
+.set-sched-btn-icon {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+
+.specAdoption-acceptAdoptionModal {
+  height: 550px;
+  width: 640px;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 30;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.specAdoption-acceptModal-closeIcon {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.accept-adoption-label {
+  display: block;
+  font-size: 1.3rem;
+  margin: 25px 0 8px 40px;
+}
+
+.accept-adoption-label:first-of-type {
+  margin-top: 50px;
+}
+
+.accept-adoption-input {
+  margin: 0 40px;
+  font-size: 1.1rem;
+  width: 500px;
+  padding: 14px;
+  background-color: #f3f5f9;
+  border: 1px solid #f1f3f7;
+  border-radius: 5px;
+  outline: none;
+}
+
+.accept-adoption-input:focus {
+  background-color: white;
+  border: 1px solid #111;
+}
+
+.accept-set-sched-time {
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.set-sched-hour {
+  margin-left: 40px;
+}
+
+.set-sched-label,
+.set-sched-input {
+  display: block;
+}
+
+.accept-adoption-btn {
+  display: block;
+  position: relative;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: white;
+  margin: 70px auto 0 auto;
+  height: 60px;
+  width: 240px;
+  background-color: #10aa3f;
+  border: 1px solid #0d8330;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .15s ease-in
+}
+
+.accept-adoption-btn:hover {
+  background-color: #23c453;
+}
+
+.set-sched-btn-icon {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+
+/* 1600 x 1200 */
+@media screen and (max-width: 1919px) {
+  .specAdoption-content {
+    margin-left: 310px;
+  }
+
+  .specAdoption-nav-container {
+    /* margin: 0 90px; */
+  }
+
+  .specAdoption-back-icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .specAdoption-back-txt {
+    font-size: 1.25rem;
+  }
+
+  .specAdoption-statusLabel {
+    font-size: 1rem;
+  }
+
+  .specAdoption-currentStatus-pending {
+    background-color: #efab54;
+    font-size: .95rem;
+    padding: 4px 15px;
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-currentStatus-rejected {
+    background-color: rgb(244, 33, 33);
+    font-size: .95rem;
+    padding: 4px 15px;
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-currentStatus-accepted {
+    background-color: green;
+    font-size: .95rem;
+    /* padding: 4px 15px; */
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-details {
+    /* background-color: aqua; */
+  }
+
+  .specAdoption-applicantInfo {
+    height: 320px;
+    width: 440px;
+    padding: 30px 30px 0 30px;
+  }
+
+  .specAdoption-info-header {
+    font-size: .95rem;
+  }
+
+  .specAdoption-applicant-label, .specAdoption-animal-label {
+    font-size: .98rem;
+  }
+
+  .specAdoption-applicant-value, .specAdoption-animal-value {
+    font-size: .95rem;
+  }
+
+  .specAdoption-applicant-addressLbl {
+    font-size: .98rem;
+  }
+
+  .specAdoption-applicant-address {
+    font-size: .95rem;
+  }
+
+  .specAdoption-applicant-validIdBtn {
+    font-size: .9rem;
+  }
+
+  .specAdoption-animalInfo {
+    height: 260px;
+    width: 410px;
+  }
+
+  .specAdoption-animalImg {
+    height: 160px;
+    width: 160px;
+  }
+
+  .specAdoption-setInterviewSched-container {
+    height: 270px;
+    width: 410px;
+    margin-top: 20px;
+  }
+
+  .specAdoption-sched-header {
+    font-size: .95rem;
+  }
+
+  .specAdoption-sched-label {
+    font-size: .98rem;
+  }
+
+  .specAdoption-sched-label span {
+    font-size: .93rem;
+  }
+
+  .hasBeenInterviewedCheckBox {
+    height: 25px;
+    width: 25px;
+  }
+
+  .hasBeenInterviewedChecked {
+    height: 25px;
+    width: 25px;
+  }
+
+  .hasBeenInterviewedCheckedIcon {
+    height: 14px;
+    width: 14px;
+  }
+
+  .hasBeenInterviewedTxt {
+    font-size: .98rem;
+  }
+
+  .specAdoption-setInterviewSched-header {
+    font-size: 1.4rem;
+  }
+  
+  .specAdoption-setInterviewSched-btn {
+    font-size: 1.1rem;
+  }
+
+  .specAdoption-adoptionActions-container {
+    height: 270px;
+    margin: 20px 0 0 20px;
+    width: 390px;
+  }
+
+  .specAdoption-acceptAdoptionBtn, .specAdoption-rejectAdoptionBtn {
+    font-size: 1rem;
+  }
+
+  .specAdoption-disabledBtn {
+    font-size: 1.1rem;
+  }
+
+  .specAdoption-validIdModal {
+    height: 650px;
+    width: 420px;
+  }
+
+  .specAdoption-validId-closeIcon {
+    height: 33px;
+    width: 33px;
+  }
+
+  .specAdoption-validId-preview {
+    height: 500px;
+    width: 340px;
+  }
+
+  .specAdoption-setSchedModal {
+    height: 520px;
+    width: 615px;
+  }
+
+  .specAdoption-setSchedModal-closeIcon {
+    height: 33px;
+    width: 33px;
+  }
+
+  .set-sched-label {
+    font-size: 1.15rem;
+  }
+
+  .set-sched-label:first-of-type {
+    margin-top: 60px;
+  }
+
+  .set-sched-input {
+    margin: 0 40px;
+    font-size: .95rem;
+    width: 500px;
+    padding: 14px;
+    background-color: #f3f5f9;
+    border: 1px solid #f1f3f7;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .set-sched-time {
+    font-size: 1rem;
+  }
+
+  .set-sched-btn {
+    font-size: 1.35rem;
+  }
+
+  /* .set-sched-btn {
+    display: block;
+    position: relative;
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: white;
+    margin: 70px auto 0 auto;
+    padding-left: 20px;
+    height: 60px;
+    width: 160px;
+    background-color: #7d5aef;
+    border: 1px solid #6036ea;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .set-sched-btn-icon {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+  } */
+
+  .specAdoption-acceptAdoptionModal {
+    height: 510px;
+    width: 615px;
+  }
+
+  .specAdoption-acceptModal-closeIcon {
+    height: 33px;
+    width: 33px;
+  }
+
+  .accept-set-sched-time {
+    font-size: 1rem;
+  }
+
+  .accept-adoption-label {
+    font-size: 1.15rem;
+  }
+
+  .accept-adoption-input {
+    font-size: .95rem;
+  }
+
+  .accept-adoption-btn {
+    font-size: 1.2rem;
+    height: auto;
+    width: auto;
+    padding: 15px;
+  }
+}
+
+/* 1440 x 900 */
+@media screen and (max-width: 1440px) {
+  .specAdoption-content {
+    margin-left: 305px;
+  }
+
+  .specAdoption-nav-container {
+    margin: 0 70px;
+  }
+
+  .specAdoption-back-icon {
+    height: 28px;
+    width: 28px;
+  }
+
+  .specAdoption-back-txt {
+    font-size: 1.2rem;
+  }
+
+  .specAdoption-statusLabel {
+    font-size: .95rem;
+  }
+
+  .specAdoption-currentStatus-pending {
+    font-size: .85rem;
+    padding: 4px 15px;
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-currentStatus-rejected {
+    font-size: .85rem;
+    padding: 4px 15px;
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-currentStatus-accepted {
+    font-size: .85rem;
+    /* padding: 4px 15px; */
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-details {
+    margin: 50px 70px 0 70px;
+  }
+
+  .specAdoption-applicantInfo {
+    height: 290px;
+    width: 390px;
+  }
+
+  .specAdoption-info-header {
+    font-size: .8rem;
+  }
+
+  .specAdoption-applicant-label,
+  .specAdoption-animal-label {
+    font-size: .85rem;
+  }
+
+  .specAdoption-applicant-value,
+  .specAdoption-animal-value {
+    font-size: .82rem;
+  }
+
+  .specAdoption-applicant-addressLbl {
+    font-size: .85rem;
+  }
+
+  .specAdoption-applicant-address {
+    font-size: .82rem;
+  }
+
+  .specAdoption-applicant-validIdBtn {
+    font-size: .75rem;
+  }
+
+  .specAdoption-animalInfo {
+    height: 240px;
+    width: 350px;
+  }
+
+  .specAdoption-animalImg {
+    height: 140px;
+    width: 140px;
+  }
+
+  .specAdoption-setInterviewSched-container {
+    height: 250px;
+    width: 360px;
+  }
+
+  .specAdoption-sched-header {
+    font-size: .8rem;
+  }
+
+  .specAdoption-sched-label {
+    font-size: .85rem;
+  }
+
+  .specAdoption-sched-label span {
+    font-size: .82rem;
+  }
+
+  .hasBeenInterviewedCheckBox {
+    height: 21px;
+    width: 21px;
+  }
+
+  .hasBeenInterviewedChecked {
+    height: 21px;
+    width: 21px;
+  }
+
+  .hasBeenInterviewedCheckedIcon {
+    height: 12px;
+    width: 12px;
+  }
+
+  .hasBeenInterviewedTxt {
+    font-size: .9rem;
+  }
+
+  .specAdoption-setInterviewSched-header {
+    font-size: 1.2rem;
+  }
+
+  .specAdoption-setInterviewSched-btn {
+    font-size: .95rem;
+  }
+
+  .specAdoption-adoptionActions-container {
+    height: 250px;
+    width: 340px;
+  }
+
+  .specAdoption-adoptBtns-header {
+    font-size: 1.4rem;
+  }
+
+  .specAdoption-acceptAdoptionBtn, .specAdoption-rejectAdoptionBtn {
+    font-size: .95rem;
+  } 
+
+  .specAdoption-disabledBtn {
+    font-size: .95rem;
+  }
+
+  .specAdoption-validIdModal {
+    height: 600px;
+    width: 380px;
+  }
+
+  .specAdoption-validId-closeIcon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .specAdoption-validId-preview {
+    height: 460px;
+    width: 300px;
+  }
+
+  .specAdoption-setSchedModal {
+    height: 480px;
+    width: 590px;
+  }
+
+  .specAdoption-setSchedModal-closeIcon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .set-sched-label {
+    font-size: 1rem;
+    margin-left: 30px;
+  }
+
+  .set-sched-input {
+    margin: 0 30px;
+    font-size: .9rem;
+  }
+
+  .set-sched-time {
+    font-size: .9rem;
+  }
+
+  .set-sched-hour {
+    margin-left: 30px;
+  }
+
+  .set-sched-btn {
+    font-size: 1.3rem;
+    margin: 50px auto 0 auto;
+    height: 55px;
+    width: 155px;
+  }
+
+  .set-sched-btn-icon {
+    height: 22px;
+    width: 22px;
+  }
+
+  .specAdoption-acceptAdoptionModal {
+    height: 480px;
+    width: 590px;
+  }
+
+  .specAdoption-acceptModal-closeIcon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .accept-set-sched-time {
+    font-size: .9rem;
+  }
+
+  .accept-adoption-label {
+    font-size: 1rem;
+    margin-left: 30px;
+  }
+
+  .accept-adoption-input {
+    font-size: .9rem;
+    margin: 0 30px;
+  }
+
+  .accept-adoption-btn {
+    font-size: 1.2rem;
+  }
+}
+
+/* 1360 x 768 */
+@media screen and (max-width: 1366px) {
+  .specAdoption-content {
+    margin-left: 275px;
+    padding-top: 50px;
+  }
+
+  .specAdoption-nav-container {
+    margin: 0 70px;
+  }
+
+  .specAdoption-back-icon {
+    height: 25px;
+    width: 25px;
+  }
+
+  .specAdoption-back-txt {
+    font-size: 1.05rem;
+  }
+
+  .specAdoption-statusLabel {
+    font-size: .9rem;
+  }
+
+  .specAdoption-currentStatus-pending {
+    font-size: .75rem;
+    padding: 4px 15px;
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-currentStatus-rejected {
+    font-size: .75rem;
+    padding: 4px 15px;
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-currentStatus-accepted {
+    font-size: .75rem;
+    /* padding: 4px 15px; */
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-details {
+    margin: 40px 70px 0 70px;
+  }
+
+  .specAdoption-applicantInfo {
+    height: 270px;
+    width: 360px;
+  }
+
+  .specAdoption-info-header {
+    font-size: .68rem;
+  }
+
+  .specAdoption-applicant-label,
+  .specAdoption-animal-label {
+    font-size: .78rem;
+  }
+
+  .specAdoption-applicant-value,
+  .specAdoption-animal-value {
+    font-size: .78rem;
+  }
+
+  .specAdoption-applicant-validIdBtn {
+    font-size: .68rem;
+    margin-top: 40px;
+  }
+
+  .specAdoption-animalInfo {
+    height: 220px;
+    width: 310px;
+  }
+
+  .specAdoption-animalImg {
+    height: 130px;
+    width: 130px;
+  }
+
+  .specAdoption-setInterviewSched-container {
+    height: 235px;
+    width: 320px;
+  }
+
+  .specAdoption-sched-header {
+    font-size: .68rem;
+  }
+
+  .specAdoption-sched-label {
+    font-size: .78rem;
+  }
+
+  .specAdoption-sched-label span {
+    font-size: .74rem;
+  }
+
+  .hasBeenInterviewedCheckBox {
+    height: 19px;
+    width: 19px;
+  }
+
+  .hasBeenInterviewedChecked {
+    height: 19px;
+    width: 19px;
+  }
+
+  .hasBeenInterviewedCheckedIcon {
+    height: 10px;
+    width: 10px;
+  }
+
+  .hasBeenInterviewedTxt {
+    font-size: .85rem;
+  }
+
+  .specAdoption-setInterviewSched-header {
+    margin-top: 60px;
+    font-size: 1.05rem;
+  }
+
+  .specAdoption-setInterviewSched-btn {
+    font-size: .85rem;
+  }
+
+  .specAdoption-adoptionActions-container {
+    height: 235px;
+    width: 300px;
+  }
+
+  .specAdoption-adoptBtns-header {
+    font-size: 1.3rem;
+  }
+
+  .specAdoption-acceptAdoptionBtn,
+  .specAdoption-rejectAdoptionBtn {
+    font-size: .85rem;
+  }
+
+  .specAdoption-disabledBtn {
+    font-size: .85rem;
+  }
+
+  .specAdoption-validIdModal {
+    height: 545px;
+    width: 355px;
+  }
+
+  .specAdoption-validId-closeIcon {
+    height: 27px;
+    width: 27px;
+  }
+
+  .specAdoption-validId-preview {
+    height: 400px;
+    width: 270px;
+  }
+
+  .specAdoption-setSchedModal, .specAdoption-acceptAdoptionModal {
+    height: 450px;
+    width: 550px;
+  }
+
+  .specAdoption-setSchedModal-closeIcon,.specAdoption-acceptModal-closeIcon {
+    height: 27px;
+    width: 27px;
+  }
+
+  .set-sched-label, .accept-adoption-label {
+    font-size: .88rem;
+  }
+
+  .set-sched-input, .accept-adoption-input {
+    margin: 0 30px;
+    font-size: .8rem;
+    width: 455px;
+  }
+
+  .set-sched-time, .accept-set-sched-time {
+    font-size: .8rem;
+  }
+
+  .set-sched-hour {
+    margin-left: 30px;
+  }
+
+  .set-sched-btn {
+    font-size: 1.2rem;
+    height: 50px;
+    width: 145px;
+  }
+
+  .set-sched-btn-icon {
+    height: 20px;
+    width: 20px;
+    top: 13px;
+  }
+
+  .accept-adoption-btn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (width: 1366px) and (height: 625px) {
+  .specAdoption-content {
+    padding-top: 40px;
+  }
+
+  .specAdoption-back-icon {
+    height: 22px;
+    width: 22px;
+  }
+
+  .specAdoption-back-txt {
+    font-size: .95rem;
+  }
+
+  .specAdoption-statusLabel {
+    font-size: .85rem;
+  }
+
+  .specAdoption-currentStatus-pending, .specAdoption-currentStatus-rejected, .specAdoption-currentStatus-accepted {
+    font-size: .7rem;
+    padding: 4px 12px;
+  }
+
+  .specAdoption-details {
+    margin: 20px 70px 0 70px;
+  }
+
+  .specAdoption-applicantInfo {
+    height: 230px;
+    width: 330px;
+    padding: 25px 25px 0 25px;
+  }
+
+  .specAdoption-info-header {
+    font-size: .6rem;
+    margin: 0 0 20px 0;
+  }
+
+  .specAdoption-applicant-label, .specAdoption-applicant-addressLbl , .specAdoption-animal-label {
+    font-size: .7rem;
+  }
+
+  .specAdoption-applicant-value, .specAdoption-applicant-address, .specAdoption-animal-value {
+    font-size: .68rem;
+  }
+
+  .specAdoption-applicant-validIdBtn {
+    font-size: .7rem;
+    padding: 5px;
+    margin: 30px 0 0 0;
+  }
+
+  .specAdoption-animalInfo {
+    height: 190px;
+    width: 300px;
+    padding: 25px 25px 0 25px;
+  }
+
+  .specAdoption-animalImg {
+    height: 115px;
+    width: 115px;
+  }
+
+  .specAdoption-setInterviewSched-container {
+    height: 200px;
+    width: 320px;
+    margin-top: 15px;
+  }
+
+  .specAdoption-sched-header {
+    margin: 25px 30px 20px 30px;
+  }
+
+  .specAdoption-sched-label {
+    font-size: .75rem;
+  }
+
+  .specAdoption-sched-label span {
+    font-size: .7rem;
+    margin-left: 2px;
+  }
+
+  .hasBeenInterviewedContainer {
+    margin: 23px 30px 0 30px;
+  }
+
+  .hasBeenInterviewedCheckBox {
+    height: 20px;
+    width: 20px;
+  }
+
+  .hasBeenInterviewedChecked {
+    height: 20px;
+    width: 20px;
+  }
+
+  .hasBeenInterviewedTxt {
+    font-size: .75rem;
+  }
+
+  .specAdoption-setInterviewSched-header {
+    font-size: 1rem;
+    margin: 50px 50px 0 50px;
+  }
+
+  .specAdoption-adoptionActions-container {
+    height: 200px;
+    width: 280px;
+    margin-top: 15px;
+  }
+
+  .specAdoption-adoptBtns-header {
+    font-size: 1.15rem;
+    margin-top: 55px;
+  }
+
+  .specAdoption-adoptBtnsContainer {
+    margin: 20px 0 0 0;
+  }
+
+  .specAdoption-acceptAdoptionBtn, .specAdoption-rejectAdoptionBtn {
+    font-size: .8rem;
+    padding: 5px 12px;
+  }
+
+  .specAdoption-disabledBtn { 
+    font-size: .8rem;
+    padding: 5px 12px;
+  }
+
+  .specAdoption-validIdModal {
+    height: 460px;
+    width: 370px;
+  }
+
+  .specAdoption-validId-closeIcon {
+    height: 23px;
+    width: 23px;
+  }
+
+  .specAdoption-validId-preview {
+    height: 380px;
+    width: 280px
+  }
+  
+  .specAdoption-setSchedModal, .specAdoption-acceptAdoptionModal {
+    height: 390px;
+  }
+
+  .specAdoption-setSchedModal-closeIcon, .specAdoption-acceptModal-closeIcon {
+    height: 23px;
+    width: 23px;
+  }
+
+  .set-sched-label, .accept-adoption-label {
+    font-size: .9rem;
+    margin: 20px 0 5px 40px;
+  }
+
+  .set-sched-input, .accept-adoption-input {
+    margin: 0 40px;
+    padding: 0;
+    font-size: .75rem;
+    font-weight: 300;
+    padding: 10px 8px;
+  }
+
+  .set-sched-time, .accept-sched-time {
+    font-size: .75rem;
+  }
+
+  .set-sched-hour {
+    margin-left: 40px;
+  }
+
+  .set-sched-btn {
+    font-size: 1.1rem;
+    border: none;
+    font-weight: 600;
+    height: 41px;
+    width: 160px;
+    margin-top: 40px;
+  }
+
+  .accept-adoption-btn {
+    margin-top: 50px;
+    height: 45px;
+    font-size: 1rem;
+    border: none;
+    padding: 0 15px;
+    font-weight: 600;
+  }
+
+  .set-sched-btn-icon {
+    height: 18px;
+    width: 18px;
+    top: 10.5px;
+    left: 40px;
+  }
+}
+
+/* 1280 x 1024 */
+@media screen and (max-width: 1280px) {
+  .specAdoption-content {
+    margin-left: 260px;
+  }
+
+  .specAdoption-setSchedModal, .specAdoption-acceptAdoptionModal {
+    height: 430px;
+    width: 500px;
+  }
+
+  .set-sched-label,
+  .accept-adoption-label {
+    font-size: .8rem;
+  }
+
+  .set-sched-input,
+  .accept-adoption-input {
+    margin: 0 30px;
+    font-size: .7rem;
+    width: 415px;
+    padding: 12px;
+  }
+
+  .set-sched-time,
+  .accept-set-sched-time {
+    font-size: .65rem;
+  }
+
+  .set-sched-hour {
+    margin-left: 30px;
+  }
+
+  .set-sched-btn {
+    font-size: 1rem;
+    height: 45px;
+    width: 125px;
+    margin-top: 60px;
+  }
+
+  .set-sched-btn-icon {
+    height: 17px;
+    width: 17px;
+    top: 11px;
+  }
+
+  .accept-adoption-btn {
+    font-size: .9rem;
+    height: 47px;
+  }
+} 
+
+/* 1024 x 768 */
+@media screen and (max-width: 1024px) {
+  .specAdoption-content {
+    margin-left: 240px;
+  }
+
+  .specAdoption-nav-container {
+    margin: 0 50px;
+  }
+
+  .specAdoption-back-icon {
+    height: 22px;
+    width: 22px;
+  }
+
+  .specAdoption-back-txt {
+    font-size: .95rem;
+  }
+
+  .specAdoption-statusLabel {
+    font-size: .8rem;
+  }
+
+  .specAdoption-currentStatus-pending {
+    font-size: .65rem;
+    padding: 4px 12px;
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-currentStatus-rejected {
+    font-size: .65rem;
+    padding: 4px 12px;
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-currentStatus-accepted {
+    font-size: .65rem;
+    padding: 4px 12px;
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-details {
+    margin: 40px 50px 0 50px;
+  }
+
+  .specAdoption-applicantInfo {
+    height: 230px;
+    width: 280px;
+    padding: 30px 20px 10px 20px;
+  }
+
+  .specAdoption-info-header {
+    font-size: .58rem;
+  }
+
+  .specAdoption-applicant-label,
+  .specAdoption-animal-label {
+    font-size: .7rem;
+  }
+
+  .specAdoption-applicant-value,
+  .specAdoption-animal-value {
+    font-size: .7rem;
+  }
+
+  .specAdoption-applicant-addressLbl, .specAdoption-applicant-address {
+    font-size: .7rem;
+  }
+
+  .specAdoption-applicant-validIdBtn {
+    font-size: .6rem;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .specAdoption-animalInfo {
+    height: 190px;
+    width: 270px;
+    padding: 30px 20px 10px 20px;
+  }
+
+  .specAdoption-animalImg {
+    height: 115px;
+    width: 115px;
+  }
+
+  .specAdoption-setInterviewSched-container {
+    height: 220px;
+    width: 280px;
+  }
+
+  .specAdoption-sched-header {
+    font-size: .58rem;
+    margin-left: 20px;
+  }
+
+  .specAdoption-sched-label {
+    font-size: .7rem;
+    margin-left: 20px;
+  }
+
+  .specAdoption-sched-label span {
+    font-size: .7rem;
+    margin-left: 3px;
+  }
+
+  .hasBeenInterviewedCheckBox {
+    height: 19px;
+    width: 19px;
+    margin-left: -10px;
+  }
+
+  .hasBeenInterviewedChecked {
+    height: 19px;
+    width: 19px;
+    margin-left: -10px;
+  }
+
+  .hasBeenInterviewedCheckedIcon {
+    height: 10px;
+    width: 10px;
+  }
+
+  .hasBeenInterviewedTxt {
+    font-size: .8rem;
+  }
+
+  .specAdoption-setInterviewSched-header {
+    margin-top: 60px;
+    font-size: .85rem;
+  }
+
+  .specAdoption-setInterviewSched-btn {
+    font-size: .8rem;
+  }
+
+  .specAdoption-adoptionActions-container {
+    height: 220px;
+    width: 280px;
+  }
+
+  .specAdoption-adoptBtns-header {
+    font-size: 1.1rem;
+  }
+
+  .specAdoption-acceptAdoptionBtn,
+  .specAdoption-rejectAdoptionBtn {
+    font-size: .75rem;
+  }
+
+  .specAdoption-disabledBtn {
+    font-size: .75rem;
+  }
+
+  .specAdoption-validIdModal {
+    height: 510px;
+    width: 310px;
+  }
+
+  .specAdoption-validId-closeIcon {
+    height: 23px;
+    width: 23px;
+  }
+
+  .specAdoption-validId-preview {
+    height: 380px;
+    width: 220px;
+  }
+
+  .specAdoption-setSchedModal,
+  .specAdoption-acceptAdoptionModal {
+    height: 400px;
+    width: 480px;
+  }
+
+  .set-sched-label,
+  .accept-adoption-label {
+    font-size: .8rem;
+  }
+
+  .set-sched-input,
+  .accept-adoption-input {
+    margin: 0 30px;
+    font-size: .7rem;
+    width: 390px;
+    padding: 12px;
+    margin-top: -2px
+  }
+
+  .set-sched-time,
+  .accept-set-sched-time {
+    font-size: .65rem;
+  }
+
+  .set-sched-hour {
+    margin-left: 30px;
+  }
+
+  .set-sched-btn {
+    font-size: 1rem;
+    height: 40px;
+    width: 125px;
+    margin-top: 40px;
+  }
+
+  .set-sched-btn-icon {
+    height: 17px;
+    width: 17px;
+    top: 11px;
+  }
+
+  .accept-adoption-btn {
+    font-size: .9rem;
+    height: 40px;
+    margin-top: 45px;
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .specAdoption-content {
+    margin-left: 0;
+  }
+
+  .specAdoption-nav-container {
+    margin: 40px 50px -10px 50px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .specAdoption-body {
+    height: 100%;
+  }
+  
+  .specAdoption-nav-container {
+    margin: 0 25px;
+  }
+
+  .specAdoption-back-icon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .specAdoption-back-txt {
+    font-size: .8rem;
+  }
+
+  .specAdoption-statusLabel {
+    font-size: .75rem;
+  }
+
+  .specAdoption-currentStatus-pending {
+    font-size: .5rem;
+    padding: 3px 8px;
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-currentStatus-rejected {
+    font-size: .5rem;
+    padding: 3px 8px;
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-currentStatus-accepted {
+    font-size: .5rem;
+    padding: 3px 8px;
+    /* margin: 0 0 0 10px; */
+  }
+
+  .specAdoption-details {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 20px 25px 0 25px;
+  }
+
+  .specAdoption-applicantInfo {
+  }
+
+  .specAdoption-animalInfo {
+    margin: 15px 0 0 0;
+  }
+
+  .specAdoption-setInterviewSched-container {
+  }
+
+  .specAdoption-adoptionActions-container {
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .specAdoption-validIdModal {
+    height: 480px;
+    width: 290px;
+  }
+
+  .specAdoption-validId-preview {
+    height: 350px;
+    width: 200px;
+  }
+
+  .specAdoption-setSchedModal,
+  .specAdoption-acceptAdoptionModal {
+    height: 390px;
+    width: 370px;
+  }
+
+  .set-sched-label,
+  .accept-adoption-label {
+    font-size: .8rem;
+  }
+
+  .set-sched-input,
+  .accept-adoption-input {
+    margin: 0 30px;
+    font-size: .7rem;
+    width: 280px;
+    padding: 12px;
+    margin-top: -2px
+  }
+
+  .set-sched-time,
+  .accept-set-sched-time {
+    font-size: .65rem;
+  }
+
+  .set-sched-hour {
+    margin-left: 30px;
+  }
+
+  .set-sched-btn {
+    font-size: 1rem;
+    height: 40px;
+    width: 125px;
+    margin-top: 40px;
+  }
+
+  .set-sched-btn-icon {
+    height: 17px;
+    width: 17px;
+    top: 11px;
+  }
+
+  .accept-adoption-btn {
+    font-size: .9rem;
+    height: 40px;
+    margin-top: 45px;
+    padding: 5px 15px;
+  }
+}
+

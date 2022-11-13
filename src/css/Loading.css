@@ -1,0 +1,131 @@
+:root {
+    --box-size: 55px;
+    --box-border-radius: 100%;
+}
+
+.loading-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    height: 450px;
+    width: 760px;
+    background-color: white;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0 0 0;
+}
+
+.loading-txt {
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 80px;
+}
+
+.animated-circle {
+    height: var(--box-size);
+    width: var(--box-size);
+    background-color: yellow;
+    border-radius: var(--box-border-radius);
+    margin: 0 15px;
+}
+
+.animated-circle:first-child {
+    background-color: #ffef3d;
+}
+
+.animated-circle:nth-child(2) {
+    background-color: #fff04f;
+}
+
+.animated-circle:nth-child(3) {
+    background-color: #fff15c;
+}
+
+.animated-circle:nth-child(4) {
+    background-color: #fff269;
+}
+
+.animated-circle:last-child {
+    background-color: #fff370;
+}
+
+/* 1440 x 900 */
+@media screen and (max-width: 1440px) {
+    :root {
+        --box-size-1440: 53px
+    }
+    
+    .loading-container {
+        height: 360px;
+        width: 620px;
+    }
+
+    .animation-container {
+        margin: 120px 0 0 0;
+    }
+
+    .loading-txt {
+        font-size: 1.85rem;
+    }
+
+    .animated-circle {
+        height: var(--box-size-1440);
+        width: var(--box-size-1440);
+    }
+}
+
+/* 1280 x 1024 */
+@media screen and (max-width: 1280px) {
+    :root {
+        --box-size-1280: 49px;
+    }
+
+    .loading-container {
+        height: 340px;
+        width: 580px;
+    }
+
+    .loading-txt {
+        font-size: 1.7rem;
+    }
+
+    .animated-circle {
+        height: var(--box-size-1280);
+        width: var(--box-size-1280);
+    }
+}
+
+@media screen and (max-width: 430px) {
+    :root {
+        --box-size-430: 35px
+    }
+
+    .loading-container {
+        height: 200px;
+        width: 370px;
+    }
+
+    .animation-container {
+        margin: 70px 0 0 0;
+    }
+
+    .loading-txt {
+        font-size: 1.05rem;
+        margin-top: 40px;
+    }
+
+    .animated-circle {
+        height: var(--box-size-430);
+        width: var(--box-size-430)
+    }
+}

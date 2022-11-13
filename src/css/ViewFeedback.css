@@ -1,0 +1,330 @@
+.feedback-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 650px;
+    width: 610px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 30;
+    font-family: 'Poppins', sans-serif;
+}
+
+.close-feedbackModal {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.feedbackModal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 50px 0 50px;
+}
+
+.feedbackModal-left{ 
+    display: flex;
+    align-items: center;
+}
+
+.feedbackModal-profilePicture {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+
+.feedbackModal-info {
+    margin-left: 10px;
+}
+
+.feedbackModal-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.feedBackModal-email {
+    font-weight: 200;
+}
+
+.feedbackModal-ratingContainer {
+    display: flex;
+    align-items: center;
+    margin: 45px 50px 0 50px;
+}
+
+.feedbackRating-filled, .feedbackRating-outline {
+    height: 30px;
+    width: 30px;
+    margin-right: 3px;
+}
+
+.feedbackRating-outline {
+    cursor: pointer;
+}
+
+.feedbackModal-date {
+    margin-left: 15px;
+    font-size: 1.05rem;
+}
+
+.feedbackModal-msgContainer {
+    margin: 30px 50px 0 50px;
+    padding: 20px;
+    height: 250px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+.feedbackModal-msg {
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+.feedbackModal-hasBeenRead {
+    display: flex;
+    align-items: center;
+    margin: 40px 50px 0 50px;
+}
+
+.feedbackModal-checkbox {
+    height: 35px;
+    width: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hasBeenRead-label {
+    font-size: 1.05rem;
+    margin-left: 10px;
+}
+
+.feedbackModal-checked {
+    height: 35px;
+    width: 35px;
+    background: #111;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+}
+
+.hasBeenRead-labelActive {
+    font-size: 1.05rem;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.feedbackModal-checkedIcon {
+    height: 18px;
+    width: 18px;
+}
+
+/* 1600 x 900 */
+@media screen and (max-width: 1919px) {
+    .feedback-modal {
+        height: 560px;
+        width: 500px;
+    }
+
+    .close-feedbackModal {
+        height: 30px;
+        width: 30px;
+    }
+
+    .feedbackModal-header {
+        margin: 45px 40px 0 40px;
+    }
+
+    .feedbackModal-profilePicture {
+        height: 58px;
+        width: 58px;
+    }
+
+    .feedbackModal-name {
+        font-size: 1.15rem;
+    }
+
+    .feedbackModal-email {
+        font-size: .88rem;
+        margin-top: -3px;
+    }
+
+    .feedbackModal-ratingContainer {
+        margin: 40px 40px 0 40px;
+    }
+
+    .feedbackRating-filled, .feedbackRating-outline {
+        height: 25px;
+        width: 25px;
+    }
+
+    .feedbackModal-date {
+        font-size: .9rem;
+    }
+
+    .feedbackModal-msgContainer {
+        margin: 30px 40px 0 40px;
+        height: 220px;
+        padding: 20px;
+    }
+
+    .feedbackModal-msg {
+        font-size: .9rem;
+    }
+
+    .feedbackModal-hasBeenRead {
+        margin: 35px 40px 0 40px;
+    }
+
+    .feedbackModal-checkbox {
+        height: 28px;
+        width: 28px;
+    }
+
+    .hasBeenRead-label {
+        font-size: .95rem;
+    }
+
+    .feedbackModal-checked {
+        height: 28px;
+        width: 28px;
+    }
+
+    .hasBeenRead-labelActive {
+        font-size: .95rem;
+    }
+}
+
+/* 1440 x 900 */
+@media screen and (max-width: 1440px) {
+
+}
+
+/* 1360 x 900 */
+@media screen and (max-width: 1366px) {
+    .feedback-modal {
+        height: 430px;
+        width: 400px;
+    }
+
+    .close-feedbackModal {
+        height: 28px;
+        width: 28px;
+    }
+
+    .feedbackModal-header {
+        margin: 34px 35px 0 35px; 
+    }
+
+    .feedbackModal-profilePicture {
+        height: 43px;
+        width: 43px;
+    }
+
+    .feedbackModal-name {
+        font-size: .93rem;
+    }
+
+    .feedbackModal-email {
+        font-size: .77rem;
+    }
+
+    .feedbackModal-ratingContainer {
+        margin: 30px 35px 0 35px;
+    }
+
+    .feedbackRating-filled, .feedbackRating-outline {
+        height: 18px;
+        width: 18px;
+    }
+
+    .feedbackModal-date {
+        font-size: .75rem;
+        margin-top: -3px;
+        margin-left: 8px;
+    }
+
+    .feedbackModal-msgContainer {
+        margin: 23px 35px 0 35px;
+        height: 170px;
+        padding: 13px;
+    }
+
+    .feedbackModal-msg {
+        font-size: .75rem;
+        line-height: 23px;
+    }
+
+    .feedbackModal-hasBeenRead {
+        margin: 30px 35px 0 35px;
+    }
+
+    .feedbackModal-checkbox {
+        height: 22px;
+        width: 22px;
+        cursor: pointer;
+    }
+
+    .hasBeenRead-label {
+        font-size: .85rem;
+    }
+
+    .feedbackModal-checked {
+        height: 24px;
+        width: 24px;
+    }
+
+    .hasBeenRead-labelActive {
+        font-size: .85rem;
+    }
+
+    .feedbackModal-checkedIcon {
+        height: 12px;
+        width: 12px;
+    }
+}
+
+/* 1280 x 1024 */
+@media screen and (max-width: 1280px) {
+    .feedbackModal-checkbox {
+        height: 20px;
+        width: 20px;
+    }
+
+    .hasBeenRead-label {
+        font-size: .8rem;
+    }
+
+    .feedbackModal-checked {
+        height: 20px;
+        width: 20px;
+    }
+
+    .hasBeenRead-labelActive {
+        font-size: .8rem;
+    }
+
+    .feedbackModal-checkedIcon {
+        height: 10px;
+        width: 10px;
+    }
+}
+
+/* 1024 x 768 */
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 430px) {
+    .feedback-modal {
+        width: 300px;
+        margin: 0;
+        height: 420px;
+        left: 45%;
+    }
+}

@@ -1,0 +1,809 @@
+.adoptionsAdmin-body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F6FA;
+    position: relative;
+}
+
+.adoptionsAdmin-content {
+    margin-left: 390px;
+    padding-top: 80px;
+}
+
+.adoptionsAdmin-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 90px;
+}
+
+.adoptionsAdmin-header {
+    font-size: 2.1rem;
+    font-weight: 700;
+    width: fit-content;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+.adoptionsAdmin-adminInfo {
+    display: flex;
+    align-items: center;
+}
+
+.adoptionsAdmin-adminInfo-name, .adoptionsAdmin-adminInfo-jobPos {
+    text-align: end;
+}
+
+.adoptions-AdminInfo-jobPos {
+    font-size: 1.1rem;
+}
+
+.adoptionsAdmin-adminProfilePic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    -webkit-user-drag: none;
+    margin-left: 20px;
+}
+
+.adoptionsAdmin-container {
+    background-color: white;
+    border-radius: 10px;
+    height: 840px;
+    margin: 30px 90px 0 90px;
+    position: relative;
+}
+
+.adoptionsAdmin-subHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: 'center';
+    padding: 40px 40px 0 40px;
+}
+
+.adoptionsAdmin-container-header {
+    font-size: 1.5rem;
+    font-weight: 600
+}
+
+.adoptionsAdmin-right {
+    display: flex;
+    align-items: center;
+}
+
+.adoptionAdmin-filter-label {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0 10px 0 0;
+}
+
+.adoptionAdmin-select {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.adoptionsAdmin-table-container {
+    box-shadow: 0 1px .5px #b0b0b0;
+}
+
+.adoptionsAdmin-table-headings {
+    height: 20px;
+    width: auto;
+    /* border-bottom: .5px solid #b0b0b0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 0 0;
+    padding: 20px 40px 20px 40px;
+}
+
+.adoptionsAdmin-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 25%;
+}
+
+.adoptionContainer {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: auto;
+    padding: 15px 40px;
+}
+
+.adoptionContainer:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.adoptionContainerColumn {
+    width: 25%;
+}
+
+.applicantContainer {
+    display: flex;
+    align-items: center;
+}
+
+.adoptionApplicantName {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.applyingForContainer {
+    display: flex;
+    align-items: center;
+}
+
+.adoptionAnimalName {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.adoptionAnimalBreed {
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.currentAdoptionStatusPending {
+    background-color: #efab54;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 8px 20px;
+}
+
+.currentAdoptionStatusRejected {
+    background-color: #ed5e68;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 8px 20px;
+}
+
+.currentAdoptionStatusAccepted {
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: fit-content;
+    padding: 8px 20px;
+}
+
+.adoptionContainerBtns {
+    display: flex;
+    align-items: center;
+}
+
+.adoptionViewBtn {
+    text-decoration: none;
+    color: black;
+    background-color: #e8e8e8;
+    width: fit-content;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.adoptionsDeleteBtn {
+    background: transparent;
+    border: none;
+    margin: 3px 0 0 15px;
+}
+
+.adoptionsDeleteBtnTxt{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.adoptionApplicantImg, .adoptionAnimalImg {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%
+}
+
+
+/* 1600 x 1200 */
+@media screen and (max-width: 1919px) {
+    .adoptionsAdmin-content {
+        margin-left: 310px;
+        padding-top: 50px;
+    }
+
+    .adoptionsAdmin-header-container {
+        /* margin: 0 90px; */
+    }
+
+    .adoptionsAdmin-header {
+        font-size: 1.75rem;
+    }
+
+    .adoptionsAdmin-adminInfo-name {
+        font-size: 1.05rem;
+    }
+
+    .adoptionsAdmin-adminInfo-jobPos {
+        font-size: .98rem;
+        margin-top: -5px;
+    }
+
+    .adoptionsAdmin-adminProfilePic {
+        height: 70px;
+        width: 70px;
+        margin-left: 15px;
+    }
+
+    .adoptionsAdmin-container {
+        height: 730px;
+    }
+
+    .adoptionsAdmin-subHeader {
+        padding: 30px 40px 0 40px;
+    }
+
+    .adoptionsAdmin-container-header {
+        font-size: 1.25rem;
+    }
+
+    .adoptionAdmin-filter-label {
+        font-size: 1rem;
+    }
+
+    .adoptionAdmin-select {
+        font-size: .9rem;
+    }
+
+    .adoptionsAdmin-table-headings {
+        height: 15px;
+        margin: 20px 0 0 0;
+        /* outline: 1px solid green */
+    }
+
+    .adoptionsAdmin-label {
+        font-size: .95rem;
+    }
+
+    .adoptionContainer {
+        /* outline: 1px solid red; */
+        height: 70px;
+    }
+
+    .adoptionApplicantImg {
+        height: 50px;
+        width: 50px;
+    }
+
+    .adoptionApplicantName {
+        font-size: .9rem;
+    }
+
+    .adoptionAnimalImg {
+        height: 50px;
+        width: 50px;
+    }
+
+    .adoptionAnimalName {
+        font-size: .9rem;
+    }
+
+    .adoptionAnimalBreed {
+        font-size: .85rem;
+    }
+
+    .currentAdoptionStatusPending, .currentAdoptionStatusRejected, .currentAdoptionStatusAccepted {
+        font-size: .95rem;
+        padding: 7px 15px;
+    }
+
+    .adoptionViewBtn {
+        font-size: .9rem;
+    }
+
+    .adoptionsDeleteBtnTxt {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+/* 1440 x 900*/
+@media screen and (max-width: 1440px) {
+    .adoptionsAdmin-content {
+        margin-left: 305px;
+    }
+
+    .adoptionsAdmin-header-container {
+        margin: 0 65px;
+    }
+
+    .adoptionsAdmin-header {
+        font-size: 1.45rem;
+    }
+
+    .adoptionsAdmin-adminInfo-name {
+        font-size: .95rem;
+    }
+
+    .adoptionsAdmin-adminInfo-jobPos {
+        margin-top: -1px;
+        font-size: .88rem;
+    }
+
+    .adoptionsAdmin-adminProfilePic {
+        height: 55px;
+        width: 55px;
+    }
+
+    .adoptionsAdmin-container {
+        height: 695px;
+        margin: 30px 65px 0 65px;
+    }
+
+    .adoptionsAdmin-subHeader {
+        padding: 25px 40px 0 40px;
+    }
+
+    .adoptionsAdmin-container-header {
+        font-size: 1.15rem;
+    }
+
+    .adoptionsAdmin-filter-label {
+        font-size: .95rem;
+    }
+
+    .adoptionAdmin-select {
+        font-size: .8rem;
+    }
+
+    .adoptionsAdmin-table-headings {
+        height: 10px;
+    }
+
+    .adoptionsAdmin-label {
+        font-size: .9rem;
+    }
+
+    .adoptionContainer {
+        height: 70px;
+    }
+
+    .adoptionApplicantImg {
+        height: 45px;
+        width: 45px;
+    }
+
+    .adoptionApplicantName {
+        font-size: .85rem;
+    }
+
+    .adoptionAnimalImg {
+        height: 45px;
+        width: 45px;
+    }
+
+    .adoptionAnimalName {
+        font-size: .83rem;
+    }
+
+    .adoptionAnimalBreed {
+        font-size: .78rem;
+    }
+
+    .currentAdoptionStatusPending,
+    .currentAdoptionStatusRejected,
+    .currentAdoptionStatusAccepted {
+        font-size: .85rem;
+        padding: 6px 13px;
+    }
+
+    .adoptionViewBtn {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (width: 1366px) and (height: 625px) {
+    .adoptionsAdmin-content {
+        margin-left: 270px;
+        padding-top: 40px;
+    }
+
+    .adoptionsAdmin-header {
+        font-size: 1.3rem;
+    }
+
+    .adoptionsAdmin-adminInfo-name {
+        font-size: .8rem;
+    }
+
+    .adoptionsAdmin-adminInfo-jobPos {
+        font-size: .7rem;
+    }
+
+    .adoptionsAdmin-adminProfilePic {
+        height: 45px;
+        width: 45px;
+        margin-left: 10px;
+    }
+
+    .adoptionsAdmin-container {
+        height: 500px;
+        margin: 15px 65px 0 65px;
+    }
+    
+    .adoptionsAdmin-subHeader {
+        padding: 15px 40px 0 40px;
+        /* outline: 1px solid cyan */
+    }
+
+    .adoptionAdmin-filter-label {
+        font-size: .8rem;
+        margin: 0 10px 0 0;
+    }
+
+    .adoptionAdmin-select {
+        font-size: .7rem;
+        padding: 3px;
+    }
+
+    .adoptionsAdmin-table-headings {
+        height: 5px;
+        /* outline: 1px solid red; */
+        margin: 0;
+        padding: 20px 40px;
+    }
+
+    .adoptionsAdmin-label {
+        font-size: .7rem;
+    }
+
+    .adoptionContainer {
+        height: 40px;
+    }
+
+    .adoptionContainer:nth-of-type(even) {
+        background: #f5f5f5;
+    }
+
+    .adoptionApplicantImg {
+        height: 36px;
+        width: 36px;
+    }
+
+    .adoptionApplicantName {
+        font-size: .73rem;
+    }
+
+    .adoptionAnimalImg {
+        height: 36px;
+        width: 36px;
+    }
+
+    .adoptionAnimalName {
+        font-size: .73rem;
+    }
+
+    .adoptionAnimalBreed {
+        font-size: .65rem;
+    }
+
+    .currentAdoptionStatusPending,
+    .currentAdoptionStatusRejected,
+    .currentAdoptionStatusAccepted {
+        font-size: .7rem;
+        padding: 4px 13px;
+    }
+
+    .adoptionViewBtn {
+        font-size: .7rem;
+        padding: 6px 13px;
+    }
+
+    .adoptionsDeleteBtnTxt {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+/* 1280 x 1024 */
+@media screen and (max-width: 1280px) {
+    .adoptionsAdmin-content {
+        margin-left: 275px;
+    }
+
+    .adoptionsAdmin-header-container {
+        margin: 0 50px;
+    }
+
+    .adoptionsAdmin-header {
+        font-size: 1.3rem;
+    }
+
+    .adoptionsAdmin-adminInfo-name {
+        font-size: .9rem;
+    }
+
+    .adoptionsAdmin-adminInfo-jobPos {
+        font-size: .85rem;
+        margin-top: -2px;
+    }
+
+    .adoptionsAdmin-adminProfilePic {
+        height: 50px;
+        width: 50px;
+    }
+
+    .adoptionsAdmin-container {
+        margin: 30px 50px 0 50px;
+        height: 620px;
+    }
+
+    .adoptionsAdmin-subHeader {
+        padding: 25px 35px 0 35px;
+    }
+
+    .adoptionAdmin-filter-label {
+        font-size: .85rem;
+    }
+
+    .adoptionAdmin-select {
+        font-size: .7rem;
+    }
+
+    .adoptionsAdmin-table-headings {
+        margin-top: 15px;
+    }
+
+    .adoptionsAdmin-label {
+        font-size: .8rem;
+    }
+
+    .adoptionContainer {
+        /* outline: 1px solid green; */
+        height: 55px;
+    }
+
+    .adoptionApplicantImg {
+        height: 38px;
+        width: 38px;
+    }
+
+    .adoptionApplicantName {
+        font-size: .75rem;
+    }
+
+    .adoptionAnimalImg {
+        height: 38px;
+        width: 38px;
+    }
+
+    .adoptionAnimalName {
+        font-size: .75rem;
+    }
+
+    .adoptionAnimalBreed {
+        font-size: .68rem;
+    }
+
+    .currentAdoptionStatusPending,
+    .currentAdoptionStatusRejected,
+    .currentAdoptionStatusAccepted {
+        font-size: .7rem;
+        padding: 5px 11px;
+    }
+
+    .adoptionViewBtn {
+        font-size: .65rem;
+    }
+
+    .adoptionsDeleteBtnTxt {
+        height: 28px;
+        width: 28px;
+    }
+}
+
+/* 1024 x 768 */
+@media screen and (max-width: 1024px) {
+    .adoptionsAdmin-content {
+        margin-left: 260px;
+    }
+
+    .adoptionsAdmin-header-container {
+        margin: 0 40px;
+    }
+
+    .adoptionsAdmin-header {
+        font-size: 1.2rem;
+    }
+
+    .adoptionsAdmin-adminInfo-name {
+        font-size: .8rem;
+    }
+
+    .adoptionsAdmin-adminInfo-jobPos {
+        font-size: .75rem;
+    }
+
+    .adoptionsAdmin-adminProfilePic {
+        height: 45px;
+        width: 45px;
+    }
+
+    .adoptionsAdmin-container {
+        margin: 30px 40px 0 40px;
+        height: 540px;
+    }
+
+    .adoptionsAdmin-subHeader {
+        /* outline: 1px solid green; */
+        padding: 15px 35px 0px 35px;
+    }
+
+    .adoptionsAdmin-container-header {
+        font-size: .95rem;
+    }
+
+    .adoptions-filter-label {
+        font-size: .65rem;
+    }
+
+    .adoptionAdmin-select {
+        font-size: .7rem;
+        padding: 2px 5px;
+    }
+
+    .adoptionsAdmin-table-headings {
+        margin-top: 10px;
+        padding: 15px 35px 15px 35px;
+    }
+
+    .adoptionsAdmin-label {
+        font-size: .7rem;
+    }
+
+    .adoptionContainer {
+        height: 48px;
+    }
+
+    .adoptionApplicantImg {
+        height: 35px;
+        width: 35px;
+    }
+
+    .adoptionApplicantName {
+        font-size: .61rem;
+        margin-left: 5px;
+    }
+
+    .adoptionAnimalImg {
+        height: 35px;
+        width: 35px;
+    }
+
+    .adoptionAnimalName {
+        font-size: .61rem;
+    }
+
+    .adoptionAnimalBreed {
+        font-size: .56rem;
+    }
+
+    .currentAdoptionStatusPending,
+    .currentAdoptionStatusRejected,
+    .currentAdoptionStatusAccepted {
+        font-size: .58rem;
+        padding: 5px 11px;
+    }
+
+    .adoptionViewBtn {
+        font-size: .58rem;
+        padding: 6px 10px;
+    }
+
+    .adoptionsDeleteBtnTxt {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+/* 768 x 1024 */
+@media screen and (max-width: 768px) {
+    .adoptionsAdmin-content {
+        margin-left: 0;
+    }
+
+    .adoptionsAdmin-header-container {
+        margin: 50px 40px 0 40px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .adoptionsAdmin-header-container {
+        margin: -5px 25px 0 25px;
+    }
+
+    .adoptionsAdmin-header {
+        font-size: .9rem;
+    }
+
+    .adoptionsAdmin-adminInfo-name {
+        font-size: .75rem;
+    }
+
+    .adoptionsAdmin-adminInfo-jobPos {
+        font-size: .65rem;
+    }
+
+    .adoptionsAdmin-adminProfilePic {
+        height: 40px;
+        width: 40px;
+        margin-left: 8px;
+    }
+
+    .adoptionsAdmin-container {
+        height: 480px;
+        margin: 20px 25px 0 25px;
+    }
+
+    .adoptionsAdmin-subHeader {
+        padding: 10px 15px 0 15px;
+    }
+
+    .adoptionsAdmin-container-header {
+        font-size: .65rem;
+    }
+
+    .adoptionsAdmin-table-headings {
+        padding: 10px 15px;
+    }
+
+    .adoptionsAdmin-label {
+        font-size: .5rem;
+    }
+
+    .adoptionContainer {
+        height: 38px;
+        padding: 10px 15px;
+    }
+
+    .adoptionApplicantImg, .adoptionAnimalImg {
+        height: 23px;
+        width: 23px;
+    }
+
+    .adoptionApplicantName {
+        font-size: .45rem;
+        margin-left: 3px;
+    }
+
+    .adoptionAnimalName {
+        font-size: .45rem;
+    }
+
+    .adoptionAnimalBreed {
+        font-size: .4rem;
+    }
+
+    .currentAdoptionStatusPending,
+    .currentAdoptionStatusRejected,
+    .currentAdoptionStatusAccepted {
+        font-size: .45rem;
+        padding: 4px 8px;
+    }
+
+    .adoptionViewBtn {
+        font-size: .45rem;
+        padding: 3px 5px;
+    }
+
+    .adoptionsDeleteBtnTxt {
+        height: 15px;
+        width: 15px;
+    }
+
+
+}

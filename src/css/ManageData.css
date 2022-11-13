@@ -1,0 +1,975 @@
+.manage-body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+    background-color: #F4F6FA;
+}
+
+.manage-content {
+  margin-left: 390px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.manage-select {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.manage-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 90px;
+}
+
+.manage-header {
+  font-size: 2.1rem;
+  font-weight: 700;
+  width: fit-content;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.manage-animal-count {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.manage-adminInfo {
+  display: flex;
+  align-items: center;
+}
+
+.manage-adminName,
+.manage-adminPos {
+  text-align: end;
+}
+
+.manage-adminPos {
+  font-size: 1.1rem;
+}
+
+.manage-adminProfile {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  -webkit-user-drag: none;
+  margin-left: 20px;
+}
+
+.manage-animals-container {
+  background-color: white;
+  border-radius: 10px;
+  height: 840px;
+  margin: 30px 90px 0 90px;
+  position: relative;
+}
+
+.manage-container-heading {
+  box-shadow: 0 1px .5px #b0b0b0;
+}
+
+.manage-subHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px 0 40px;
+}
+
+.manage-animals-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.manage-searchContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid #111;
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+  padding: 10px 10px;
+}
+
+.manage-searchIcon {
+  height: 25px;
+  width: 25px;
+}
+
+.manage-searchTxt {
+  border: none;
+  height: 100%;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.manage-searchTxt:focus {
+  border: none;
+  outline: none;
+}
+
+
+.manage-animals-right {
+  display: flex;
+  align-items: center;
+}
+
+.manage-filter-animals {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+}
+
+.manage-filter-txt {
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0 10px 0 0;
+
+}
+
+.manage-add-animal {
+  border: none;
+  border-radius: 5px;
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin: 0 30px 0 0;
+  outline: none;
+  padding: 8px 15px;
+  transition: .2s ease-in;
+  width: fit-content;
+}
+
+.manage-add-admin:hover {
+  background-color: #111;
+  font-family: 500;
+  color: white;
+}
+
+.manage-table-label {
+  height: 20px;
+  width: auto;
+  /* border-bottom: .5px solid #b0b0b0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 0 0;
+  padding: 20px 40px 20px 40px;
+}
+
+.manage-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 20%;
+}
+
+.manage-label-name,
+.manage-label-contactNo {
+  width: 20%;
+}
+
+.manage-label-email {
+  width: 25%
+}
+
+.manage-label-jobPos,
+.manage-label-verified {
+  width: 20%;
+}
+
+.manage-label-actions {
+  width: 15%;
+}
+
+.specAnimal-container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: auto;
+  padding: 15px 0;
+}
+
+.specAnimal-container:nth-of-type(even) {
+  background: #f5f5f5;
+}
+.specAnimal-column {
+  width: 20%;
+}
+
+.specAnimal-name,
+.specAnimal-contactNo {
+  width: 20%;
+}
+
+.specAnimal-name-head {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.specAnimal-name-head-user {
+  margin-left: 10px;
+}
+
+.specAnimal-name-subHead {
+  margin-left: 10px;
+}
+
+.specAnimal-email {
+  width: 25%;
+}
+
+.specAnimal-verfied,
+.specAnimal-jobPos {
+  width: 20%;
+}
+
+.specAnimal-actions {
+  width: 15%;
+}
+
+.specAnimal-delete {
+  margin-left: 20px;
+}
+
+.specAnimal-btn-container {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.specAnimal-name {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.specAnimal-actions {
+  margin-right: 40px;
+}
+
+.specAnimal-name-profPic {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+
+.specAnimal-btn {
+  height: 35px;
+  width: 35px;
+  cursor: pointer
+}
+
+
+/* 1600 x 1200 */
+@media screen and (max-width: 1919px)  {
+  .manage-content {
+    margin-left: 310px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .manage-header {
+    font-size: 1.85rem;
+  }
+
+  .manage-animal-count {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+
+  .manage-adminName {
+    font-size: 1.1rem;
+  }
+
+  .manage-adminPos {
+    font-size: 1rem;
+  }
+
+  .manage-adminProfile {
+    height: 70px;
+    width: 70px;
+  }
+
+  .manage-searchContainer {
+    padding: 7px;
+  }
+
+  .manage-searchIcon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .manage-searchTxt {
+    font-size: .8rem;
+  }
+
+  .manage-animals-container {
+    height: 740px;
+  }
+
+  .manage-subHeader {
+    padding-top: 30px
+  }
+
+  .manage-animals-header {
+    font-size: 1.3rem;
+  }
+
+  .manage-filter-txt {
+    font-size: 1.1rem;
+  }
+
+  .manage-select {
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  .manage-add-animal {
+    font-size: 1rem;
+  }
+
+  .manage-table-label { 
+    margin: 25px 0 0 0;
+  }
+
+  .manage-label {
+    font-size: .95rem;
+  }
+
+  .specAnimal-container {
+    height: 68px;
+    padding: 15px 0;
+  }
+
+  .specAnimal-name-profPic {
+    height: 45px;
+    width: 45px;
+  }
+
+  .specAnimal-name-head, .specAnimal-email-info, .specAnimal-contactNo-info, .specAnimal-verified-info {
+    font-size: .9rem;
+  }
+
+  .specAnimal-btn {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+/* 1440 x 900 */
+@media screen and (max-width: 1440px) {
+  .manage-content {
+    margin-left: 305px;
+  }
+
+  .manage-header {
+    font-size: 1.7rem;
+  }
+
+  .manage-animal-count {
+    margin-top: 8px;
+    font-size: 1.05rem;
+  }
+
+  .manage-adminName {
+    font-size: 1rem;
+  }
+
+  .manage-adminPos {
+    font-size: .9rem;
+  }
+
+  .manage-adminProfile {
+    height: 60px;
+    width: 60px;
+  }
+
+  .manage-animals-container {
+    height: 700px;
+  }
+
+  .manage-subHeader {
+    padding-top: 22px;
+  }
+
+  .manage-animals-header {
+    font-size: 1.15rem;
+  }
+
+  .manage-filter-txt {
+    font-size: 1rem;
+  }
+
+  .manage-select {
+    font-size: .92rem;
+  }
+
+  .manage-add-animal {
+    font-size: .92rem;
+  }
+
+  .manage-table-label {
+    margin: 15px 0 0 0;
+  }
+
+  .manage-label {
+    font-size: .85rem;
+  }
+}
+
+/* 1368 x 768 */
+@media screen and (max-width: 1366px) {
+  .manage-content {
+    margin-left: 275px;
+  }
+
+  .manage-header-container {
+    margin: 0 70px;
+  }
+
+  .manage-header {
+    font-size: 1.55rem;
+  }
+
+  .manage-animal-count {
+    margin-top: 17x;
+    font-size: 1rem;
+  }
+
+  .manage-subHeader {
+    padding-top: 20px;
+  }
+
+  .manage-animals-container {
+    margin: 30px 70px 0 70px;
+    height: 650px;
+  }
+
+  .manage-animals-header {
+    font-size: 1.05rem;
+  }
+
+  .manage-filter-txt {
+    font-size: .9rem;
+  }
+  
+  .manage-select { 
+    font-size: .8rem;
+  }
+  
+  .manage-add-animal {
+    font-size: .85rem;
+  }
+
+  .manage-table-label {
+    margin: 10px 0 0 0;
+  }
+
+  .manage-label {
+    font-size: .8rem;
+  }
+
+  .specAnimal-container {
+    height: 60px;
+  }
+
+  .specAnimal-name-profPic {
+    height: 40px;
+    width: 40px;
+  }
+
+  .specAnimal-name-head, .specAnimal-email-info, .specAnimal-contactNo-info, .specAnimal-verified-info {
+    font-size: .78rem;
+  }
+
+  .specAnimal-btn {
+    height: 25px;
+    width: 25px;
+  }
+
+}
+
+@media screen and (width: 1366px) and (height: 625px) {
+  .manage-content {
+    padding-top: 40px;
+    height: 100%;
+  }
+
+  .manage-header {
+    font-size: 1.3rem;
+  }
+
+  .manage-animal-count {
+    margin-top: 6px;
+    font-size: .9rem;
+  }
+
+  .manage-adminName {
+    font-size: .8rem;
+  }
+
+  .manage-adminPos {
+    font-size: .7rem;
+  }
+
+  .manage-adminProfile {
+    height: 45px;
+    width: 45px;
+    margin-left: 10px;
+  }
+
+  .manage-animals-container {
+    margin: 15px 70px 0 70px;
+    height: 500px;
+  }
+
+  .manage-subHeader {
+    padding: 15px 40px 0 40px;
+  }
+
+  .manage-searchContainer {
+    height: 12px;
+  }
+
+  .manage-searchIcon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .manage-searchTxt {
+    font-size: .7rem;
+    font-weight: 200;
+  }
+
+  .manage-filter-animals {
+
+  }
+
+  .manage-filter-txt {
+    font-size: .8rem;
+    margin: 0 10px 0 0;
+  }
+
+  .manage-select {
+    font-size: .7rem;
+    padding: 3px
+  }
+
+  .manage-add-animal {
+    font-size: .7rem;
+    padding: 6px 13px;
+  }
+
+  .manage-table-label {
+    /* outline: 1px solid red; */
+    height: 5px;
+  }
+
+  .manage-label {
+    font-size: .7rem;
+  }
+
+  .specAnimal-container {
+    height: 40px;
+    /* outline: 1px solid green */
+  }
+
+  .specAnimal-name-profPic {
+    height: 37px;
+    width: 37px;
+  }
+
+  .specAnimal-name-head {
+    font-size: .73rem;
+  }
+
+  .specAnimal-email-info, .specAnimal-contactNo-info, .specAnimal-verified-info {
+    font-size: .73rem;
+  }
+
+  .specAnimal-btn {
+    height: 22px;
+    width: 22px;
+  }
+}
+
+/* 1280 x 1024 */
+@media screen and (max-width: 1280px) {
+  .manage-content {
+    margin-left: 265px;
+  }
+
+  .manage-header-container {
+    margin: 0 60px;
+  }
+
+  .manage-header {
+    font-size: 1.4rem;
+  }
+
+  .manage-animal-count {
+    margin-top: 7px;
+    font-size: .85rem;
+  }
+
+  .manage-adminName {
+    font-size: .9rem;
+  }
+
+  .manage-adminPos {
+    font-size: .85rem;
+    margin-top: -2px;
+  }
+
+  .manage-adminProfile {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+  }
+
+  .manage-select {
+    font-size: .7rem;
+    padding: 3px;
+  }
+
+  .manage-add-animal {
+    font-size: .7rem;
+  }
+
+  .manage-searchContainer {
+    padding: 6px;
+  }
+
+  .manage-searchIcon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .manage-searchTxt {
+    font-size: .75rem;
+  }
+
+  .manage-animals-container {
+    margin: 30px 60px 0 60px;
+    height: 640px;
+  }
+
+  .specAnimal-container {
+    height: 58px;
+  }
+
+  .specAnimal-name-head,
+  .specAnimal-email-info,
+  .specAnimal-contactNo-info,
+  .specAnimal-verified-info {
+    font-size: .75rem;
+  }
+}
+
+/* 1024 x 768 */
+@media screen and (max-width: 1024px) {
+  .manage-content {
+    margin-left: 255px;
+  }
+
+  .manage-header {
+    font-size: 1.25rem;
+  }
+
+  .manage-adminName {
+    font-size: .85rem;
+  }
+
+  .manage-adminPos {
+    font-size: .75rem;
+  }
+
+  .manage-adminProfile {
+    height: 50px;
+    width: 50px;
+  }
+
+  .manage-animals-container {
+
+  }
+
+  .manage-subHeader {
+    padding-top: 15px;
+  }
+
+  .manage-animals-header {
+    font-size: .9rem;
+  }
+
+  .manage-searchContainer {
+    padding: 5px;
+  }
+
+  .manage-searchIcon {
+    height: 14px;
+    width: 14px;
+  }
+
+  .manage-searchTxt {
+    font-size: .6rem;
+  }
+
+  .manage-filter-animals {
+    margin-right: 15px;
+  }
+
+  .manage-filter-txt {
+    font-size: .7rem;
+  }
+
+  .manage-select {
+    font-size: .6rem;
+  }
+
+  .manage-add-animal {
+    font-size: .6rem;
+    margin: 0;
+    padding: 5px 8px;
+  }
+
+  .manage-table-label {
+    margin: 10px 0 0 0;
+  }
+
+  .manage-label {
+    font-size: .67rem;
+  }
+  
+  .specAnimal-container {}
+
+  .specAnimal-name-head,
+  .specAnimal-email-info,
+  .specAnimal-contactNo-info,
+  .specAnimal-verified-info {
+    font-size: .65rem;
+  }
+
+  .specAdoption-btn {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-right {
+    height: 35px;
+    width: 35px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    display: block;
+  }
+
+  .manage-body {
+    width: 100vw;
+  }
+
+  .manage-content {
+    margin-left: 0;
+    padding-top: 40px;
+  }
+
+  .manage-header-container {
+    margin: 0 50px;
+  }
+
+  .manage-header {
+    font-size: 1.2rem;
+  }
+
+  .manage-animal-count {
+    margin-top: 9px;
+    font-size: .95rem;
+  }
+
+  .manage-adminName {
+    font-size: 1rem;
+  }
+
+  .manage-adminPos {
+    font-size: .9rem;
+  }
+
+  .manage-adminProfile {
+    height: 52px;
+    width: 52px;
+    margin-left: 15px;
+  }
+
+  .manage-animals-container {
+    margin: 25px 50px 0 50px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .manage-subHeader {
+    padding: 20px 30px 0 30px;
+  }
+
+  .manage-searchContainer {
+    padding: 5px 10px;
+  }
+
+  .manage-searchIcon {
+    /* 14px */
+  }
+
+  .manage-searchTxt {
+    font-size: .7rem;
+  }
+
+  .manage-select {
+    font-size: .6rem;
+  }
+
+  .manage-add-animal {
+    /* font-size: .6rem;
+    margin: 0;
+    padding: 5px 8px; */
+  }
+
+  .manage-table-label {
+    padding: 20px 30px 10px 30px;
+  }
+
+  .manage-label {
+    font-size: .7rem;
+  }
+
+  .specAnimal-name-head,
+  .specAnimal-email-info,
+  .specAnimal-contactNo-info,
+  .specAnimal-verified-info {
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .menu-right {
+    height: 28px;
+    width: 28px;
+    margin-right: 25px;
+  }
+
+  .manage-content {
+    padding-top: 25px;
+  }
+  
+  .manage-header-container {
+    margin: 0 25px;
+  }
+
+  .manage-header {
+    font-size: .9rem;
+  }
+
+  .manage-animal-count {
+    margin-top: 7px;
+    font-size: .8rem;
+  }
+
+  .manage-adminName {
+    font-size: .75rem;
+  }
+
+  .manage-adminPos {
+    font-size: .65rem;
+  }
+
+  .manage-adminProfile {
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+  }
+
+  .manage-animals-container {
+    margin: 30px 25px 0 25px;
+    height: 440px;
+  }
+
+  .manage-subHeader {
+    padding: 10px 10px 0 10px;
+    gap: 10px;
+  }
+
+  .manage-searchContainer {
+    padding: 5px;
+  }
+
+  .manage-searchIcon {
+    display: none;
+  }
+
+  .manage-searchTxt {
+    margin-left: 0;
+    font-size: .55rem;
+  }
+
+  .manage-filter-animals {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .manage-filter-txt {
+    font-size: .6rem;
+  }
+
+  .manage-select {
+    padding: 0;
+  }
+
+  .manage-add-animal {
+    font-size: .45rem;
+    padding: 5px 5px;
+  }
+
+  .manage-table-label {
+    padding: 5px 15px;
+  }
+
+  .manage-label {
+    font-size: .5rem;
+  }
+
+  .specAnimal-container {
+    height: 30px;
+  }
+
+  .specAnimal-name {
+    margin-left: 15px;
+  }
+
+  .specAnimal-name-profPic {
+    height: 22px;
+    width: 22px;
+  }
+
+  .specAnimal-name-head, .specAnimal-email-info, .specAnimal-contactNo-info, .specAnimal-verified-info {
+    font-size: .45rem;
+  }
+
+  .specAnimal-name-head {
+    margin-left: 5px;
+  }
+
+  .specAnimal-actions {
+    display: flex;
+    margin-right: 15px;
+  }
+
+  .specAnimal-btn {
+    height: 15px;
+    width: 15px;
+    margin: 0;
+  }
+}

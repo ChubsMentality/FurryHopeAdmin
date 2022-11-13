@@ -1,0 +1,601 @@
+.userFeedback-body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F6FA;
+    position: relative;
+}
+
+.userFeedback-content {
+    margin-left: 390px;
+    padding-top: 90px;
+}
+
+.userFeedbacks-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 60px;
+    margin: 90px 90px 0 90px;
+}
+
+.feedback-container {
+    height: 260px;
+    width: 410px;
+    background-color: white;
+    border-radius: 15px;
+    transition: .1s ease-in;
+    position: relative;
+}
+
+.feedbackProfPic {
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    border: 7px solid #F4F6Fa;
+    position: absolute;
+    top: -30px;
+    right: 15px;
+}
+
+.feedback-name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 25px 15px 10px 25px;
+    width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.feedback-txt {
+    font-weight: 300;
+    margin: 0 25px 0 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.55rem;
+}
+
+.feedback-subInfo {
+    display: flex;
+    margin: 23px 25px 0 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback-rating-txt {
+    font-size: 1.05rem;
+}
+
+.feedback-viewed {
+    font-size: .9rem;
+    background-color: #111;
+    color: white;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.feedback-actions { 
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #bfbfbf;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.feedback-viewBtn, .feedback-deleteBtn {
+    display: block;
+    width: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.15rem;
+    background: transparent;
+}
+
+.feedback-viewBtn {
+    border-bottom-left-radius: 15px;
+    border-right: .5px solid #bfbfbf;
+    transition: .2s ease-out;
+}
+
+.feedback-deleteBtn {
+    border-bottom-right-radius: 15px;
+    transition: .2s ease-out;
+}
+
+.feedback-viewBtn:hover {
+    background-color: rgb(69, 69, 69);
+    color: white;
+    font-weight: 700;
+}
+
+.feedback-deleteBtn:hover {
+    background-color: #ed5e68;
+    color: white;
+    font-weight: 700;
+}
+
+.feedback-container:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, .05);
+}
+
+/* 1600 x 900 */
+@media screen and (max-width: 1919px) {
+    .userFeedback-content {
+        margin-left: 310px;
+        padding-top: 75px;
+    }
+
+    .userFeedbacks-container {
+        row-gap: 40px;
+        column-gap: 60px;
+        margin: 60px 90px 0 90px;
+    }
+
+    .feedback-container {
+        width: 330px;
+        height: 220px;
+    }
+
+    .feedbackProfPic {
+        height: 63px;
+        width: 63px;
+        top: -30px;
+        right: 15px;
+    }
+
+    .feedback-name {
+        font-size: 1.1rem;
+        margin: 20px 15px 7px 25px;
+    }
+
+    .feedback-txt {
+        margin: 0 15px 0 25px;
+        font-size: .85rem;
+    }
+
+    .feedback-subInfo {
+        margin: 18px 25px 0 25px;
+    }
+
+    .feedback-rating-txt {
+        font-size: .815rem;
+    }
+
+    .feedback-viewed {
+        font-size: .7rem;
+    }
+
+    .feedback-actions {
+        height: 50px
+    }
+
+    .feedback-viewBtn, .feedback-deleteBtn {
+        font-size: .935rem;
+    }
+}
+
+/* 1440 x 900 */
+@media screen and (max-width: 1440px) {
+    .userFeedback-content {
+        margin-left: 305px;
+    }
+
+    .userFeedbacks-container {
+        row-gap: 35px;
+        column-gap: 40px;
+        margin: 60px 70px 0 70px;
+    }
+
+    .feedback-container {
+        height: 215px;
+        width: 291px;
+    }
+}
+
+/* 1360 x 900 */
+@media screen and (max-width: 1366px) {
+    .userFeedback-content {
+        margin-left: 275px;
+        padding-top: 60px;
+    }
+
+    .userFeedbacks-container {
+        margin: 40px 70px 0 70px;
+    }
+
+    .feedback-container {
+        width: 288px;
+        height: 195px;
+        border-radius: 10px;
+    }
+
+    .feedbackProfPic {
+        height: 55px;
+        width: 55px;
+        top: -23px;
+        border-width: 6px;
+    }
+
+    .feedback-name {
+        font-size: .93rem;
+        margin: 18px 22px 6px 22px;
+    }
+
+    .feedback-txt {
+        font-size: .75rem;
+        margin: 7px 22px 0 22px;
+    }
+
+    .feedback-subInfo {
+        margin: 15px 22px 0 22px;
+    }
+
+    .feedback-rating-txt {
+        font-size: .77rem;
+    }
+
+    .feedback-viewed {
+        font-size: .63rem;
+    }
+
+    .feedback-actions {
+        height: 42px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .feedback-viewBtn, .feedback-deleteBtn {
+        font-size: .8rem;
+    }
+
+    .feedback-viewBtn {
+        border-bottom-left-radius: 10px;
+        border-right: .5px solid #bfbfbf;
+        transition: .2s ease-out;
+    }
+
+    .feedback-deleteBtn {
+        border-bottom-right-radius: 10px;
+        transition: .2s ease-out;
+    }
+}
+
+@media screen and (width: 1366px) and (height: 625px) {
+    .userFeedback-content {
+        padding-top: 40px;
+    }
+
+    .userFeedbacks-container {
+        margin: 40px 70px 0 70px;
+    }
+
+    .feedback-container {
+        height: 166px;
+        width: 280px;
+    }
+
+    .feedbackProfPic {
+        height: 45px;
+        width: 45px;
+        border-width: 5px;
+    }
+
+    .feedback-name {
+        font-size: .83rem;
+    }
+
+    .feedback-txt {
+        font-size: .68rem;
+        line-height: 20px;
+        margin: 5px 22px 6px 22px;
+    }
+
+    .feedback-subInfo {
+        margin: 12px 22px 0 22px;
+    }
+
+    .feedback-rating-txt {
+        font-size: .7rem;
+    }
+
+    .feedback-viewed {
+        font-size: .58rem;
+        padding: 3px 10px;
+    }
+
+    .feedback-actions {
+        height: 35px;
+    }
+
+    .feedback-viewBtn, .feedback-deleteBtn {
+        font-size: .75rem;
+    }
+}
+
+/* 1280 x 1024 */
+@media screen and (max-width: 1280px) {
+    .userFeedback-content {
+        margin-left: 260px;
+    }
+
+    .userFeedbacks-container {
+        margin: 50px 65px 0 65px;
+        column-gap: 28px;
+        row-gap: 40px;
+    }
+
+    .feedback-container {
+        border-radius: 5px;
+        width: 278px;
+    }
+
+    .feedbackProfPic {
+        border-width: 4.5px;
+        top: -23px;
+        height: 58px;
+        width: 58px;
+    }
+
+    .feedback-name {
+        font-size: .95rem;
+        margin: 15px 18px 6px 18px;
+    }
+
+    .feedback-txt {
+        font-size: .7rem;
+        margin: 7px 18px 0 18px;
+    }
+
+    .feedback-subInfo {
+        margin: 15px 18px 0 18px;
+    }
+
+    .feedback-actions {
+        height: 40px;
+    }
+
+    .feedback-viewBtn,
+    .feedback-deleteBtn {
+        font-size: .8rem;
+    }
+
+    .feedback-viewBtn {
+        border-bottom-left-radius: 5px;
+        border-right: .5px solid #bfbfbf;
+        transition: .2s ease-out;
+    }
+
+    .feedback-deleteBtn {
+        border-bottom-right-radius: 5px;
+        transition: .2s ease-out;
+    }
+
+}
+
+/* 1024 x 768 */
+@media screen and (max-width: 1024px) {
+    .userFeedback-content {
+        margin-left: 220px;
+    }
+
+    .userFeedbacks-container {
+        margin: 40px 65px 0 65px;
+        column-gap: 20px;
+    }
+
+    .feedback-container {
+        width: 211px;
+        height: 165px;
+    }
+
+    .feedbackProfPic {
+        height: 40px;
+        width: 40px;
+        top: -20px;
+    }
+
+    .feedback-name {
+        font-size: .78rem;
+        margin: 14px 15px 0 15px;
+    }
+
+    .feedback-txt {
+        font-size: .6rem;
+        margin: 5px 15px 0 15px;
+        line-height: 20px;
+    }
+
+    .feedback-subInfo {
+        margin: 15px 15px 0 15px;
+    }
+
+    .feedback-rating-txt {
+        font-size: .65rem;
+    }
+
+    .feedback-viewed {
+        font-size: .55rem;
+        padding: 3px 7px;
+    }
+
+        .feedback-actions {
+            height: 35px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    
+        .feedback-viewBtn,
+        .feedback-deleteBtn {
+            font-size: .7rem;
+        }
+    
+        .feedback-viewBtn {
+            border-bottom-left-radius: 10px;
+            border-right: .5px solid #bfbfbf;
+            transition: .2s ease-out;
+        }
+    
+        .feedback-deleteBtn {
+            border-bottom-right-radius: 10px;
+            transition: .2s ease-out;
+        }
+}
+
+
+
+.pagination-div {
+    display: grid;
+    place-items: center;
+}
+
+.pagination-container-feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+
+.pagination-page-li-feedback {
+    list-style-type: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 5px 10px;
+}
+
+.pagination-link-a-feedback {
+    font-size: 1.55rem;
+    padding: 4px;
+    cursor: pointer
+}
+
+.next-li-feedback {
+    list-style-type: none;
+    margin: 7px 0px 0px 50px;
+}
+
+.next-a-feedback {
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer
+}
+
+.prev-li-feedback {
+    list-style-type: none;
+    margin: 7px 50px 0px 0px;
+}
+
+.prev-a-feedback {
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer
+}
+
+.active-li-feedback {
+    outline: none;
+    border: none;
+    background-color: #e4e4e4;
+}
+
+.active-a-feedback {
+    color: black;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer
+}
+
+/* Pagination Media Queries */
+
+/* 1600 x 900 */
+@media screen and (max-width: 1919px) {
+    .pagination-container-feedback {
+        bottom: 28px;
+    }
+
+    .pagination-page-li-feedback {
+        padding: 3px 5px;
+    }
+
+    .pagination-link-a-feedback {
+        font-size: 1.4rem;
+    }
+}
+
+/* 1440 x 900 */
+@media screen and (max-width: 1440px) {
+    .pagination-container-feedback {
+        bottom: 14px
+    }
+
+    .pagination-link-a-feedback {
+        font-size: 1.2rem;
+    }
+}
+
+/* 1360 x 900 */
+@media screen and (max-width: 1360px) {}
+
+/* 1280 x 1024 */
+@media screen and (max-width: 1280px) {
+    .pagination-link-a-feedback {
+        font-size: 1.1rem;
+    }
+}
+
+/* 1024 x 768 */
+@media screen and (max-width: 1024px) {}
+
+/* 768 x 1024 */
+@media screen and (max-width: 778px) {
+    .userFeedback-content {
+        margin-left: 0;
+    }
+
+    .userFeedbacks-container {
+        margin: 50px 50px 0 50px;
+    }
+
+    .feedback-container {
+        width: 205px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .userFeedback-body {
+        height: 100vh;
+    }
+
+    .userFeedbacks-container {
+        margin: 35px 25px 0 25px;
+        column-gap: 10px;
+        row-gap: 35px;
+    }
+
+    .feedback-container {
+        height: 150px;
+        width: 180px;
+    }
+
+    .feedbackProfPic {
+        height: 35px;
+        width: 35px;
+        right: 10px;
+    }
+
+    .feedback-actions {
+        height: 25px;
+    }
+}

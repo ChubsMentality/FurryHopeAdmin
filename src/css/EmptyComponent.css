@@ -1,0 +1,46 @@
+.empty-component {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+.empty-component-img {
+    width: 558px;
+    height: 558px;
+    margin-top: -50px;
+    margin-left: 100px;
+}
+
+.empty-txt-header {
+    padding-top: 90px;
+    font-size: 3rem;
+    font-size: 600;
+    margin-bottom: 4px;
+}
+
+.empty-txt-subhead {
+    font-size: 2rem;
+    font-size: 200;
+}
+
+.empty-component-link {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #FFEF3D;
+    width: 227px;
+    height: 58px;
+    margin-top: 30px;
+    padding-bottom: 4.5px;
+    padding-left: 27px;
+    font-size: 1.3rem;
+    font-weight: 600; 
+    position: relative;  
+}
+
+.empty-component-link-icon {
+    position: absolute;
+    top: 12.5px;
+    left: 15px;
+}

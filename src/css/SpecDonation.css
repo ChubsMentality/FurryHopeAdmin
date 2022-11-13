@@ -1,0 +1,324 @@
+.specDonation-body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #F4F6FA;
+    font-family: "Poppins", sans-serif;
+}
+
+.specDonation-content {
+    margin-left: 390px;
+    padding-top: 70px;
+}
+
+.specDonation-flexContainer {
+    margin: 30px 0 0 90px;
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 120px;
+    background-color: white;
+    padding: 30px 40px;
+}
+
+.specDonation-info-container {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.specDonation-donatedBy-label {
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    padding: 5px 12px;
+    width: fit-content;
+}
+
+.specDonation-donatedBy-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.specDonation-profilePicture {
+    height: 70px;
+    width: 70px;
+}
+
+.specDonation-donatedByName {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.specDonation-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.specDonation-value {
+    font-weight: 400;
+}
+
+.specDonation-proofOfDonation-label {
+    margin: 40px 0 5px 0;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.specDonation-proofOfDonation-input {
+    width: fit-content;
+    cursor: pointer;
+    display: block;
+}
+
+.specDonation-proofOfDonation-preview {
+    height: 150px;
+    width: 270px;
+    background-color: black;
+    margin: 15px 0;
+    display: block;
+}
+
+.specDonation-receivedDonation {
+    width: 280px;
+    background-color: #111;
+    color: white;
+    padding: 11px 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1.03rem;
+    border-radius: 5px;
+    margin: 25px 0 0 0;
+}
+
+.specDonation-receivedDonation-disabled {
+    width: 280px;
+    background-color: rgb(197, 197, 197);
+    color: white;
+    padding: 11px 0;
+    border: none;
+    outline: none;
+    font-size: 1.03rem;
+    border-radius: 5px;
+    margin: 25px 0 0 0;
+}
+
+/* Items table */
+.specDonation-modal-table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.specDonation-modal-tableHeading {
+    background-color: #111;
+    border-right: 1px solid #b0b0b0;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 7px 35px;
+    position: sticky;
+    top: 0;
+}
+
+.specDonation-modal-body-row {
+    border-bottom: .5px solid #b0b0b0;
+    height: 20px;
+}
+
+.specDonation-modal-itemName,
+.specDonation-modal-quantity {
+    font-size: .95rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+/* 1600 x 1200 */
+@media screen and (max-width: 1919px) {
+    .specDonation-content {
+        margin-left: 310px;
+    }
+}
+
+/* 1440 x 900 */
+@media screen and (max-width: 1440px) {
+    .specDonation-content {
+        margin-left: 305px;
+    }
+
+    .specDonation-flexContainer {
+        margin: 30px 0 0 70px;
+        column-gap: 75px
+    }
+
+    .specDonation-donatedBy-label {
+        font-size: .88rem;
+    }
+    
+    .specDonation-donatedBy-container {
+        margin: 15px 0;
+    }
+
+    .specDonation-profilePicture {
+        height: 55px;
+        width: 55px;
+    }
+
+    .specDonation-donatedByName {
+        font-size: 1rem;
+    }
+
+    .specDonation-label {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .specDonation-proofOfDonation-label {
+        font-size: 1rem;
+        margin: 30px 0 5px 0;
+    }
+
+    .specDonation-proofOfDonation-preview {
+        height: 150px;
+        width: 270px;
+        margin: 15px 0;
+    }
+
+    .specDonation-receivedDonation, .specDonation-receivedDonation-disabled {
+        font-size: .95rem;
+        width: 270px;
+    }
+
+    .specDonation-modal-tableHeading {
+        font-size: .85rem;
+        padding: 5px 35px;
+    }
+
+    .specDonation-modal-body-row {
+        height: 10px;
+    }
+
+    .specDonation-modal-itemName, .specDonation-modal-quantity {
+        padding: 7px 0;
+        font-size: .83rem;
+    }
+}
+
+/* 1360 x 768 */
+@media screen and (max-width: 1366px) {
+    .specDonation-content {
+        margin-left: 275px;
+        padding-top: 50px;
+    }
+
+    .specDonation-flexContainer {
+        margin: 20px 0 0 70px;
+        column-gap: 60px;
+        padding: 25px;
+    }
+
+    .specDonation-donatedBy-label {
+        font-size: .65rem;
+    }
+
+    .specDonation-donatedBy-container {
+        margin: 15px 0;
+    }
+
+    .specDonation-profilePicture {
+        height: 45px;
+        width: 45px;
+    }
+
+    .specDonation-donatedByName {
+        font-size: .75rem;
+    }
+
+    .specDonation-label {
+        font-size: .75rem;
+    }
+
+    .specDonation-proofOfDonation-label {
+        font-size: .75rem;
+        margin: 25px 0 5px 0;
+    }
+
+    .specDonation-proofOfDonation-input {
+        font-size: .7rem;
+    }
+
+    .specDonation-proofOfDonation-preview {
+        height: 110px;
+        width: 230px;
+    }
+
+    .specDonation-receivedDonation,
+    .specDonation-receivedDonation-disabled {
+        font-size: .75rem;
+        width: 230px;
+        padding: 8px 0;
+    }
+
+    .specDonation-modal-tableHeading {
+        font-size: .65rem;
+        padding: 4px 35px;
+    }
+
+    .specDonation-modal-body-row {
+        height: 5px;
+    }
+
+    .specDonation-modal-itemName,
+    .specDonation-modal-quantity {
+        padding: 4px 0;
+        font-size: .65rem;
+    }
+}
+
+@media screen and (width: 1366px) and (height: 625px) {
+
+}
+
+/* 1280 x 1024 */
+@media screen and (max-width: 1280px) {
+
+}
+
+/* 1024 x 768 */
+@media screen and (max-width: 1024px) {
+    .specDonation-content {
+        margin-left: 240px;
+    }
+
+    .specDonation-flexContainer {
+        margin: 25px 0 0 55px;
+    }
+}   
+
+/* 768 x 1024 */
+@media screen and (max-width: 778px) {
+    .specDonation-content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .specDonation-body {
+        height: 100%;
+    }
+
+    .specDonation-flexContainer {
+        width: auto;
+        margin: 20px 25px 40px 25px;
+        flex-direction: column-reverse;
+    }
+
+    .specDonation-info-container {
+        width: 100%;
+        margin-top: 50px;
+    }
+}

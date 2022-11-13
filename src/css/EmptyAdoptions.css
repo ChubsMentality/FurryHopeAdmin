@@ -1,0 +1,20 @@
+.empty-adoptions {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    margin: 0 20px 0 20px;
+}
+
+.empty-adoptions-img {
+    width: 558px;
+    height: 558px;
+    margin: 0 0 0 0;
+}
+
+.empty-adoptions-txt {
+    font-size: 2.5rem;
+    font-size: 600;
+    text-align: center;
+}
